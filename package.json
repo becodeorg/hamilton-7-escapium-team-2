@@ -1,0 +1,11 @@
+{
+  "name": "escapium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map resources/scss/style.scss resources/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
