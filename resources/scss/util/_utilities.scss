@@ -12,3 +12,15 @@ $whiteBackground: #fefefe;
 $globalFontColor: #717171;
 
 $navFontcolor: #777;
+
+.linkTransparent{
+    text-decoration: none;
+    width: fit-content;
+    color: $whiteBackground;
+    font-family: $escapiumFontHeading;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border:2px solid #7171717a;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
