@@ -5,3 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.topBar {
+  display: flex;
+}
+
+.nav__container {
+  display: flex;
+}
+.nav__item {
+  list-style: none;
+}
