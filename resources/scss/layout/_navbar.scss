@@ -1,0 +1,13 @@
+.topBar {
+    display: flex;
+}
+
+.nav {
+    &__container {
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+    }
+}
