@@ -1,17 +1,17 @@
-@use "../util/utilities";
+@use "../util/utilities" as *;
 
 #blogs{
-    background-color: utilities.$darkBackground;
-    font-family: utilities.$escapiumFontParagraph;
+    background-color: $darkBackground;
+    font-family: $escapiumFontParagraph;
     
 }
 
 body{
-    color: utilities.$globalFontColor;
+    color: $globalFontColor;
 }
 
 h2,h3{
-    color: utilities.$whiteBackground;
+    color: $whiteBackground;
 }
 
 h2{
@@ -79,7 +79,7 @@ h2{
         a{
             text-decoration: none;
             text-transform: uppercase;
-            color : utilities.$globalFontColor;
+            color : $globalFontColor;
             padding: 10px 0px 0px;
             font-size: 0.7rem;
         }
@@ -125,9 +125,9 @@ h2{
             display: flex;
             flex-direction: column;
             gap: 25px;
-            color: utilities.$globalFontColor;
+            color: $globalFontColor;
             h2{
-                color: utilities.$whiteBackground;
+                color: $whiteBackground;
                 font-size: 2rem;
             }
             ul{
@@ -148,19 +148,19 @@ h2{
                 font-family: "Font Awesome 5 Free";
                 content: "\f133";
                 margin-right: 5px;
-                color: utilities.$whiteBackground;
+                color: $whiteBackground;
             }
             &-user::before{
                 font-family: "Font Awesome 5 Free";
                 content: "\f007";
                 margin-right: 5px;
-                color: utilities.$whiteBackground;
+                color: $whiteBackground;
             }
             &-comment::before{
                 font-family: "Font Awesome 5 Free";
                 content: "\f4ad";
                 margin-right: 5px;
-                color: utilities.$whiteBackground;
+                color: $whiteBackground;
             }
         }
     }
