@@ -1,4 +1,4 @@
-@use '../util/utilities';
+@use '../util/utilities' as *;
 
 // Mobile 
 .navbar {
@@ -38,7 +38,7 @@
         transition: 0.3s;
         width: 70%;
         height: 100%;
-        background-color: utilities.$sidebarBackground;
+        background-color: $sidebarBackground;
 
         &.active {
             left: 0;
@@ -53,7 +53,7 @@
         font-weight: 700;
         line-height: 50px;
         text-transform: capitalize;
-        border-bottom: 1px solid utilities.$navFontcolor;
+        border-bottom: 1px solid $navFontcolor;
     }
 
 }
@@ -67,7 +67,7 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: utilities.$whiteBackground;
+    background-color: $whiteBackground;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -144,7 +144,7 @@
                 position: relative;
                 left: 15px;
                 font-size: 1.8rem;
-                color: utilities.$navFontcolor;
+                color: $navFontcolor;
             }
         }
     }
