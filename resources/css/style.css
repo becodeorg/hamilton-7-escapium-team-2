@@ -1,18 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap%27");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27");
+body {
+  font-family: "Hind";
+  color: #fefefe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+li {
+  list-style: none;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.topBar {
+.navbar {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211835) 0%, rgba(0, 0, 0, 0.7413559174) 100%);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__logo {
+  max-height: 50px;
+}
+.navbar__logo > img {
+  max-height: 50px;
 }
 
-.nav__container {
+.nav {
   display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.nav__search {
+  padding: 20px;
+}
+.nav__search.active {
+  display: none;
+}
+.nav__menu {
+  align-items: center;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: 0.3s;
+  width: 70%;
+  height: 100%;
+  background-color: #252525;
+}
+.nav__menu.active {
+  left: 0;
 }
 .nav__item {
-  list-style: none;
+  text-align: left;
+  padding: 0px 30px;
+  margin-left: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #777;
+}
+
+.booking__button {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fefefe;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    min-width: max-content;
+    justify-content: flex-start;
+  }
+  .navbar__logo {
+    max-height: 80px;
+  }
+  .navbar__logo > img {
+    max-height: 80px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav__menu {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    position: static;
+    left: 0;
+    top: 0;
+    transition: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  .nav__list {
+    display: flex;
+    flex: 70%;
+  }
+  .nav__item {
+    border-bottom: none;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0px 20px;
+  }
+  .nav__search {
+    font-size: 1.3rem;
+  }
+  .nav__search::after {
+    content: "|";
+    position: relative;
+    left: 15px;
+    font-size: 1.8rem;
+    color: #777;
+  }
+  .booking__container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 30%;
+  }
+  .booking__button {
+    display: block;
+  }
+  .login--link {
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-left: 5px;
+  }
 }

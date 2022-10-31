@@ -11,31 +11,44 @@
 </head>
 
 <body>
-    <section class="top-bar">
-        <img src="resources/images/logo/logo.png" alt="Escapium Logo">
+    <section class="navbar">
+        <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
+
         <nav class="nav">
-            <ul class="nav__container">
-                <li class="nav__item"><a href="index.html">home</a></li>
-                <li class="nav__item"><a href="about.html">about</a></li>
-                <li class="nav__item"><a href="#">features</a></li>
-                <li class="nav__item"><a href="rooms.html">rooms</a></li>
-                <li class="nav__item"><a href="contact.html">booking</a></li>
-                <li class="nav__item"><a href="blogs.html">blog</a></li>
-                <li class="nav__item"><a href="contact.html">contacts</a></li>
-            </ul>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">features</a></li>
+                    <li class="nav__item"><a class="nav__link" href="rooms.html">rooms</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">booking</a></li>
+                    <li class="nav__item"><a class="nav__link" href="blogs.html">blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">contacts</a></li>
+                </ul>
+                <div class="booking__container">
+                    <div class="booking__button nav__item">
+                        <a class="booking__button--link" href="contact.html">Book Now!</a>
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass nav__search"></i>
+                    <div class="booking__login nav__item">
+                        <i class=" fa-regular fa-user"></i>
+                        <a class="login--link" href="#">Sign in</a>
+                    </div>
+                </div>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Booking and Login  -->
         </nav>
-        <div class="booking__container">
-            <div class="booking__button">
-                <a class="booking__button--item" href="contact.html">Book Now!</a>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>|</p>
-            </div>
-            <div class="login">
-                <i class="fa-regular fa-user"></i>
-                <a class="topBar__login--item" href="#">Sign in</a>
-            </div>
-        </div>
+
     </section>
+
+    <script src="resources/js/index.js"></script>
 </body>
 
 </html>
