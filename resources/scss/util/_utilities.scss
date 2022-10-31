@@ -1,4 +1,3 @@
-
 $escapiumFontHeading: "Montserrat";
 $escapiumFontParagraph : "Hind";
 $escapiumRed: #F60B0E;
@@ -12,35 +11,5 @@ $whiteBackground: #fefefe;
 $globalFontColor: #717171;
 
 $navFontcolor: #777;
-
-.linkTransparent{
-    text-decoration: none;
-    width: fit-content;
-    color: $whiteBackground;
-    font-family: $escapiumFontHeading;
-    font-size: 0.7rem;
-    font-weight: 900;
-    border:2px solid #7171717a;
-    padding: 10px 30px;
-    border-radius: 30px;
-}
-.linkTransparent:hover{
-    border: 2px solid #71717100;
-    background-color: $escapiumRed;
-    box-shadow: 0px 0px 5px $whiteBackground;
-}
-
-.linkRed{
-    text-decoration: none;
-    width: fit-content;
-    color: $whiteBackground;
-    background-color: $escapiumRed;
-    font-family: $escapiumFontHeading;
-    font-size: 0.7rem;
-    font-weight: 900;
-    padding: 15px 20px;
-    border-radius: 60px;
-}
-.linkRed:hover{
-    box-shadow: 0px 0px 5px $whiteBackground;
-}
+$sidebarBackground: #252525;
+$navBarColor: #cbcbcb;

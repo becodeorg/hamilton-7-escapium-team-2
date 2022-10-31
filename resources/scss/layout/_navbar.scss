@@ -1,0 +1,171 @@
+@use '../util/utilities';
+
+// Mobile 
+.navbar {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        max-height: 50px;
+
+        >img {
+            max-height: 50px;
+        }
+    }
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    &__search {
+        padding: 20px;
+
+        &.active {
+            display: none;
+        }
+    }
+
+    &__menu {
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        transition: 0.3s;
+        width: 70%;
+        height: 100%;
+        background-color: utilities.$sidebarBackground;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    &__item {
+        text-align: left;
+        padding: 0px 30px;
+        margin-left: 2px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: capitalize;
+        border-bottom: 1px solid utilities.$navFontcolor;
+    }
+
+}
+
+.booking__button {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: utilities.$whiteBackground;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+
+    &.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    &.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media(min-width:1024px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        min-width: max-content;
+        justify-content: flex-start;
+
+        &__logo {
+            max-height: 80px;
+
+            >img {
+                max-height: 80px;
+            }
+        }
+    }
+
+    .nav {
+        width: 100%;
+
+        &__menu {
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            position: static;
+            left: 0;
+            top: 0;
+            transition: 0;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+        }
+
+        &__list {
+            display: flex;
+            flex: 70%;
+        }
+
+        &__item {
+            border-bottom: none;
+            align-items: center;
+            font-size: 1.3rem;
+            padding: 0px 20px;
+        }
+
+        &__search {
+            font-size: 1.3rem;
+
+            &::after {
+                content: "|";
+                position: relative;
+                left: 15px;
+                font-size: 1.8rem;
+                color: utilities.$navFontcolor;
+            }
+        }
+    }
+
+    .booking {
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex: 30%;
+        }
+
+        &__button {
+            display: block;
+        }
+    }
+
+    .login--link {
+        text-transform: uppercase;
+        font-weight: 200;
+        padding-left: 5px;
+    }
+}
