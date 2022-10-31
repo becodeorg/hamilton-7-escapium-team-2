@@ -1,0 +1,131 @@
+@use "../util/fonts" as *;
+@use "../util/reset" as *;
+@use "../util/utilities" as *;
+
+footer::after {
+  content: "";
+  background: url("/resources/images/gallery/room-7.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+footer {
+  position: relative;
+  background-color: $darkestBackground;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+i {
+  color: white;
+}
+.footerNumbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.footerLines {
+  border-style: solid;
+  border-width: 1px;
+  width: 40px;
+  border-top-color: $escapiumRed;
+}
+h3 {
+  font-family: $escapiumFontHeading;
+  color: $whiteBackground;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.escapiumParagraph {
+  font-family: $escapiumFontParagraph;
+  color: $globalFontColor;
+}
+
+span {
+  color: $whiteBackground;
+}
+.aUseful {
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-family: $escapiumFontParagraph;
+  color: $globalFontColor;
+}
+
+#lastAUseful {
+  margin-bottom: 0px;
+}
+
+.sectionsfooter {
+  margin-left: 45px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#ouraddress {
+  color: $escapiumFontParagraph;
+  display: flex;
+  flex-direction: column;
+}
+
+#usefullinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.hours {
+  padding-left: 10px;
+}
+
+#sociallinks {
+}
+
+ul.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #222222;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+
+ul.social > li > a:hover {
+  text-decoration: none;
+  background-color: $escapiumRed;
+}
+#footerEscapiumLogo {
+  display: flex;
+  justify-content: center;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
