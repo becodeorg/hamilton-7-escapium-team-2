@@ -7,8 +7,8 @@
 }
 
 footer {
-  margin: auto;
-  background-color: #1B1B1B;
+  background: url("/resources/images/gallery/room-7.jpg") top left fixed;
+  filter: grayscale(100%);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -16,6 +16,14 @@ footer {
 
 i {
   color: white;
+}
+
+.footerNumbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
 }
 
 .footerLines {
@@ -42,12 +50,18 @@ span {
 }
 
 .aUseful {
+  margin-bottom: 15px;
   text-decoration: none;
   font-family: "Hind";
   color: #717171;
 }
 
+#lastAUseful {
+  margin-bottom: 0px;
+}
+
 .sectionsfooter {
+  margin-left: 45px;
   margin-bottom: 40px;
   text-align: left;
 }
@@ -61,6 +75,10 @@ span {
 #usefullinks {
   display: flex;
   flex-direction: column;
+}
+
+.hours {
+  padding-left: 10px;
 }
 
 ul.social {
@@ -92,6 +110,11 @@ ul.social > li > a {
 ul.social > li > a:hover {
   text-decoration: none;
   background-color: #F60B0E;
+}
+
+#footerEscapiumLogo {
+  display: flex;
+  justify-content: center;
 }
 
 #copyright {
