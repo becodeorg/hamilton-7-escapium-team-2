@@ -1,0 +1,101 @@
+@use "../util/fonts" as *;
+@use "../util/reset" as *;
+@use "../util/utilities" as *;
+
+footer {
+  margin: auto;
+
+  //background-image: url("/resources/images/gallery/room-7.jpg");
+  background-color: $darkestBackground;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+i {
+  color: white;
+}
+.footerLines {
+  border-style: solid;
+  border-width: 1px;
+  width: 40px;
+  border-top-color: $escapiumRed;
+}
+h3 {
+  font-family: $escapiumFontHeading;
+  color: $whiteBackground;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.escapiumParagraph {
+  font-family: $escapiumFontParagraph;
+  color: $globalFontColor;
+}
+
+span {
+  color: $whiteBackground;
+}
+.aUseful {
+  text-decoration: none;
+  font-family: $escapiumFontParagraph;
+  color: $globalFontColor;
+}
+
+.sectionsfooter {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#ouraddress {
+  color: $escapiumFontParagraph;
+  display: flex;
+  flex-direction: column;
+}
+
+#usefullinks {
+  display: flex;
+  flex-direction: column;
+}
+
+#workinghours.hours {
+}
+
+#sociallinks {
+}
+
+ul.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #222222;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+
+ul.social > li > a:hover {
+  text-decoration: none;
+  background-color: $escapiumRed;
+}
+#copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
