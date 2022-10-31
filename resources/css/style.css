@@ -215,7 +215,7 @@ h2 {
     display: flex;
     justify-content: center;
   }
-=======
+}
 footer::after {
   content: "";
   background: url("/resources/images/gallery/room-7.jpg");
