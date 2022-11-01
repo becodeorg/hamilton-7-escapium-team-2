@@ -13,3 +13,18 @@ $globalFontColor: #717171;
 $navFontcolor: #777;
 $sidebarBackground: #252525;
 $navBarColor: #cbcbcb;
+
+@mixin button {
+    width: 250px;
+    border: 1px solid #777;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $escapiumRed;
+
+    }
+}

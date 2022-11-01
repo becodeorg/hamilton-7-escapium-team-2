@@ -1,0 +1,47 @@
+@use "../util/utilities" as *;
+
+main {
+    background-color: $darkBackground;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.linkTransparent {
+    @include button;
+    margin: 5px;
+
+}
+
+.rooms {
+    padding: 10px;
+}
+
+.card {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7483368347338936) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%),
+        url(../images/gallery/slide-2.jpg) no-repeat center 10%;
+    height: 400px;
+    background-size: cover;
+
+    margin: 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &__content {
+        text-align: left;
+        position: relative;
+        left: 30px;
+        top: 260px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: start;
+        align-items: baseline;
+    }
+}
