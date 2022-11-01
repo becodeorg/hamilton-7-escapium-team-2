@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
     &__logo {
         max-height: 50px;
@@ -54,12 +56,29 @@
         line-height: 50px;
         text-transform: capitalize;
         border-bottom: 1px solid $navFontcolor;
+
     }
 
+    &__link {
+        color: $whiteBackground;
+
+    }
 }
 
-.booking__button {
-    display: none;
+.booking {
+    &__button {
+        display: none;
+    }
+
+    &__login {
+        &--link {
+            color: $whiteBackground;
+
+            &:hover {
+                color: $escapiumRed;
+            }
+        }
+    }
 }
 
 .bar {
@@ -113,8 +132,10 @@
 
         &__menu {
             min-width: 100%;
+
             display: flex;
             align-items: center;
+
             position: static;
             left: 0;
             top: 0;
@@ -126,18 +147,39 @@
 
         &__list {
             display: flex;
-            flex: 70%;
+            flex: 60%;
         }
 
         &__item {
+            position: relative;
             border-bottom: none;
             align-items: center;
             font-size: 1.3rem;
             padding: 0px 20px;
+
         }
+
+        /*
+            &--redbar {
+
+                position: relative;
+                left: -80px;
+                display: block;
+                width: 50px;
+                height: 3px;
+                background-color: $escapiumRed;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                transform: translateY(23px) translateX(4px) rotate(-45deg);
+            }
+        */
 
         &__search {
             font-size: 1.3rem;
+
+            &:hover {
+                color: $escapiumRed;
+            }
 
             &::after {
                 content: "|";
@@ -150,22 +192,31 @@
     }
 
     .booking {
-
         &__container {
             display: flex;
             align-items: center;
             justify-content: end;
-            flex: 30%;
+            flex: 40%;
         }
 
         &__button {
             display: block;
         }
+
+        &__login {
+
+            &--link {
+                color: $whiteBackground;
+                text-transform: uppercase;
+                font-weight: 200;
+                padding-left: 5px;
+
+                &:hover {
+                    color: $escapiumRed;
+                }
+            }
+        }
     }
 
-    .login--link {
-        text-transform: uppercase;
-        font-weight: 200;
-        padding-left: 5px;
-    }
+
 }

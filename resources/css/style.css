@@ -16,7 +16,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #fefefe;
+  color: #777;
 }
 
 li {
@@ -339,6 +339,8 @@ ul.social > li > a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .navbar__logo {
   max-height: 50px;
@@ -381,9 +383,18 @@ ul.social > li > a:hover {
   text-transform: capitalize;
   border-bottom: 1px solid #777;
 }
+.nav__link {
+  color: #fefefe;
+}
 
 .booking__button {
   display: none;
+}
+.booking__login--link {
+  color: #fefefe;
+}
+.booking__login--link:hover {
+  color: #F60B0E;
 }
 
 .bar {
@@ -426,6 +437,20 @@ ul.social > li > a:hover {
   }
   .nav {
     width: 100%;
+    /*
+        &--redbar {
+
+            position: relative;
+            left: -80px;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: $escapiumRed;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            transform: translateY(23px) translateX(4px) rotate(-45deg);
+        }
+    */
   }
   .nav__menu {
     min-width: 100%;
@@ -441,9 +466,10 @@ ul.social > li > a:hover {
   }
   .nav__list {
     display: flex;
-    flex: 70%;
+    flex: 60%;
   }
   .nav__item {
+    position: relative;
     border-bottom: none;
     align-items: center;
     font-size: 1.3rem;
@@ -451,6 +477,9 @@ ul.social > li > a:hover {
   }
   .nav__search {
     font-size: 1.3rem;
+  }
+  .nav__search:hover {
+    color: #F60B0E;
   }
   .nav__search::after {
     content: "|";
@@ -463,14 +492,18 @@ ul.social > li > a:hover {
     display: flex;
     align-items: center;
     justify-content: end;
-    flex: 30%;
+    flex: 40%;
   }
   .booking__button {
     display: block;
   }
-  .login--link {
+  .booking__login--link {
+    color: #fefefe;
     text-transform: uppercase;
     font-weight: 200;
     padding-left: 5px;
+  }
+  .booking__login--link:hover {
+    color: #F60B0E;
   }
 }
