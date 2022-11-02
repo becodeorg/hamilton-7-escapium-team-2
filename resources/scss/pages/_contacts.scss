@@ -1,0 +1,37 @@
+@use "../util/fonts" as *;
+@use "../util/reset" as *;
+@use "../util/utilities" as *;
+
+header {
+  text-align: center;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 74%,
+      rgb(0, 0, 0) 100%
+    ),
+    url(../images/gallery/slide-1.jpg) no-repeat center 10%;
+  height: 200px;
+  background-size: cover;
+}
+
+.hero {
+  padding: 40px;
+
+  &title {
+    color: red;
+    margin: 15px 0;
+  }
+
+  &breadcrumb {
+    display: flex;
+    flex-direction: rom;
+    align-items: center;
+    justify-content: center;
+
+    &--link {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  }
+}
