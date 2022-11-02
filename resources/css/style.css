@@ -47,7 +47,8 @@ body {
   color: #717171;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #fefefe;
 }
 
@@ -173,7 +174,8 @@ h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     line-clamp: 2;
     -webkit-box-orient: vertical;
   }
@@ -222,6 +224,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 .linkTransparent {
@@ -230,7 +233,7 @@ main {
   border-radius: 50px;
   text-align: center;
   padding: 5px 0;
-  color: white;
+  color: #fefefe;
   font-weight: 600;
   margin: 5px;
 }
@@ -242,27 +245,98 @@ main {
   padding: 10px;
 }
 
+.one {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/slide-2.jpg) no-repeat center 10%;
+}
+
+.two,
+.twelve {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-2.jpg) no-repeat center 10%;
+}
+
+.three {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-3.jpg) no-repeat center 10%;
+}
+
+.four,
+.eleven {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-4.jpg) no-repeat center 10%;
+}
+
+.five {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-5.jpg) no-repeat center 10%;
+}
+
+.six {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/gallery-1.jpg) no-repeat center 10%;
+}
+
+.seven {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-7.jpg) no-repeat center 10%;
+}
+
+.eight {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-8.jpg) no-repeat center 10%;
+}
+
+.nine {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-9.jpg) no-repeat center 10%;
+}
+
+.four,
+.ten,
+.eleven,
+.twelve {
+  display: none;
+}
+
 .card {
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7483368347) 0%, rgba(0, 0, 0, 0.7413559174) 100%), url(../images/gallery/slide-2.jpg) no-repeat center 10%;
-  height: 400px;
-  background-size: cover;
-  margin: 30px 0;
+  height: 450px;
+  margin: 20px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: cover;
+}
+.card .expand {
+  visibility: hidden;
+}
+.card:hover .expand {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  visibility: visible;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  right: -80%;
+  top: 5%;
+}
+.card:hover .expand i {
+  padding-top: 9px;
 }
 .card__content {
   text-align: left;
   position: relative;
   left: 30px;
-  top: 260px;
+  top: 300px;
+  width: max-content;
+}
+.card__content h3 {
+  margin: 10px 0;
 }
 .card__info {
   display: flex;
   justify-content: start;
   align-items: baseline;
 }
-.card__info p {
+.card__info--item {
+  display: flex;
+  align-items: center;
+}
+.card__info--item p {
   padding: 0 15px;
+}
+.card__level {
+  font-size: 0.8rem;
 }
 .card__level--item {
   color: #777;
@@ -271,6 +345,28 @@ main {
   color: #F60B0E;
 }
 
+@media (min-width: 768px) {
+  .level {
+    flex-direction: row;
+  }
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+  }
+  .card {
+    height: 250px;
+  }
+  .card__content {
+    text-align: left;
+    position: relative;
+    left: 30px;
+    top: 100px;
+  }
+  .card__content h3 {
+    margin: 10px 0;
+  }
+}
 .navbar {
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
   display: flex;

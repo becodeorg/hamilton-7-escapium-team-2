@@ -1,40 +1,43 @@
 @use "../util/utilities";
 
-#blogs{
+#blogs {
     background-color: utilities.$darkBackground;
     font-family: utilities.$escapiumFontParagraph;
-    
+
 }
 
-body{
+body {
     color: utilities.$globalFontColor;
 }
 
-h2,h3{
+h2,
+h3 {
     color: utilities.$whiteBackground;
 }
 
-h2{
+h2 {
     padding-bottom: 10px;
 }
 
-.blogs_nav{
+.blogs_nav {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.blogs_categories{
+.blogs_categories {
     padding: 10px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    hr{
+
+    hr {
         width: 35px;
         border-top: 4px solid #71717159;
         color: #71717159;
     }
-    ul{
+
+    ul {
         list-style: none;
         text-transform: uppercase;
         display: flex;
@@ -44,119 +47,135 @@ h2{
     }
 }
 
-.blogs_recentPosts{
+.blogs_recentPosts {
     display: flex;
     flex-direction: column;
     padding: 40px 30px;
-    h2{
+
+    h2 {
         padding-bottom: 15px;
     }
-    .recentPost{
+
+    .recentPost {
         display: flex;
-        justify-content:left;
+        justify-content: left;
         align-items: center;
-        gap : 50px;
+        gap: 50px;
         padding: 60px 0px 0px;
-        h3{
+
+        h3 {
             text-transform: uppercase;
             font-size: 0.6rem;
         }
     }
 }
 
-.blogs_tags-container{
+.blogs_tags-container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     padding: 30px 0px 20px;
 }
 
-.blogs_archives{
+.blogs_archives {
     padding-top: 50px;
-    &-container{
+
+    &-container {
         display: grid;
         grid: 1fr 1fr 1fr 1fr 1fr 1fr;
-        a{
+
+        a {
             text-decoration: none;
             text-transform: uppercase;
-            color : utilities.$globalFontColor;
+            color: utilities.$globalFontColor;
             padding: 10px 0px 0px;
             font-size: 0.7rem;
         }
-        a:first-child{
+
+        a:first-child {
             padding-top: 20px;
         }
     }
-    
+
 }
 
-@media (max-width: 768px){
-    section{
+@media (max-width: 768px) {
+    section {
         padding: 10px 30px;
     }
-    hr{
+
+    hr {
         width: 35px;
         border-top: 4px solid #71717159;
         color: #71717159;
         height: 3px;
     }
-    .blogs_blogPosts{
+
+    .blogs_blogPosts {
         padding: 35px 15px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap : 50px;
+        gap: 50px;
 
     }
-    .blogs_card{
+
+    .blogs_card {
         width: 380px;
         box-shadow: 0px 0px 50px black;
         height: 650px;
-        
-        &-image{
-            img{
+
+        &-image {
+            img {
                 width: 100%;
                 height: auto;
                 max-height: 200px;
             }
         }
-        &-content{
+
+        &-content {
             padding: 20px;
             display: flex;
             flex-direction: column;
             gap: 25px;
             color: utilities.$globalFontColor;
-            h2{
+
+            h2 {
                 color: utilities.$whiteBackground;
                 font-size: 2rem;
             }
-            ul{
+
+            ul {
                 list-style: none;
                 display: grid;
-                grid: 1fr 1fr / 1fr 1fr ;
+                grid: 1fr 1fr / 1fr 1fr;
             }
-            
-            p{
+
+            p {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
-                -webkit-line-clamp: 2; /* number of lines to show */
-                        line-clamp: 2; 
+                -webkit-line-clamp: 2;
+                /* number of lines to show */
+                line-clamp: 2;
                 -webkit-box-orient: vertical;
             }
-            &-calendar::before{
+
+            &-calendar::before {
                 font-family: "Font Awesome 5 Free";
                 content: "\f133";
                 margin-right: 5px;
                 color: utilities.$whiteBackground;
             }
-            &-user::before{
+
+            &-user::before {
                 font-family: "Font Awesome 5 Free";
                 content: "\f007";
                 margin-right: 5px;
                 color: utilities.$whiteBackground;
             }
-            &-comment::before{
+
+            &-comment::before {
                 font-family: "Font Awesome 5 Free";
                 content: "\f4ad";
                 margin-right: 5px;
@@ -164,19 +183,22 @@ h2{
             }
         }
     }
-    .blogs_instagram-container{
+
+    .blogs_instagram-container {
         display: grid;
         grid: 1fr 1fr /1fr 1fr 1fr;
         width: 100%;
-        gap:5px;
+        gap: 5px;
         padding: 30px 0px;
-        img{
+
+        img {
             object-fit: cover;
             width: 100%;
             max-height: 100%;
         }
     }
-    .blogs_instagram-link{
+
+    .blogs_instagram-link {
         width: 100%;
         display: flex;
         justify-content: center;
