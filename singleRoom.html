@@ -6,12 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1c776a677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/style.css">
     <title>Escapium - Room Description</title>
 </head>
 
 <body>
     <header>
-        <!--NAVBAR-->
+        <section class="navbar">
+            <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
+
+            <nav class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="index.html">home</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="rooms.html">rooms</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">booking</a></li>
+                        <li class="nav__item"><a class="nav__link" href="blogs.html">blog</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">contacts</a></li>
+
+                    </ul>
+                    <div class="booking__container">
+                        <div class="booking__button nav__item">
+                            <a class="booking__button--link" href="contact.html">Book Now!</a>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass nav__search"></i>
+                        <div class="booking__login nav__item">
+                            <i class=" fa-regular fa-user"></i>
+                            <a class="booking__login--link" href="#">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Booking and Login  -->
+            </nav>
+
+        </section>
         <section class="hero">
             <h1>The Cure</h1>
         </section>
@@ -128,6 +166,8 @@
     <footer>
         <!--Olivia -->
     </footer>
+
+    <script src="resources/js/index.js"></script>
 </body>
 
 </html>

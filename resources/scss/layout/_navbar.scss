@@ -25,7 +25,7 @@
     padding: 0 10px;
 
     &__search {
-        padding: 20px;
+        padding: 0 20px;
 
         &.active {
             display: none;
@@ -33,6 +33,7 @@
     }
 
     &__menu {
+        z-index: 5;
         align-items: center;
         position: fixed;
         left: -100%;
@@ -117,23 +118,15 @@
     }
 
     .navbar {
-        min-width: max-content;
-        justify-content: flex-start;
+        justify-content: space-between;
 
-        &__logo {
-            max-height: 80px;
-
-            >img {
-                max-height: 80px;
-            }
-        }
     }
 
     .nav {
         width: 100%;
 
+
         &__menu {
-            min-width: 100%;
 
             display: flex;
             align-items: center;
@@ -142,7 +135,7 @@
             left: 0;
             top: 0;
             transition: 0;
-            width: auto;
+            width: 100%;
             height: auto;
             background-color: transparent;
         }
@@ -156,7 +149,6 @@
             position: relative;
             border-bottom: none;
             align-items: center;
-            font-size: 1.3rem;
             padding: 0px 20px;
 
         }
@@ -177,8 +169,6 @@
         */
 
         &__search {
-            font-size: 1.3rem;
-
             &:hover {
                 color: $escapiumRed;
             }

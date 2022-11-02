@@ -236,6 +236,7 @@ main {
   color: #fefefe;
   font-weight: 600;
   margin: 5px;
+  font-size: 0.8rem;
 }
 .linkTransparent:hover {
   background-color: #F60B0E;
@@ -345,26 +346,51 @@ main {
   color: #F60B0E;
 }
 
+.pages a {
+  border: 1px solid #777;
+  padding: 5px 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.pages a:hover {
+  background-color: #F60B0E;
+  border: none;
+}
+
 @media (min-width: 768px) {
   .level {
     flex-direction: row;
   }
+  .linkTransparent {
+    width: 100px;
+  }
   .rooms {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 180px);
     grid-gap: 10px;
+    justify-content: center;
   }
   .card {
     height: 250px;
   }
   .card__content {
-    text-align: left;
-    position: relative;
-    left: 30px;
-    top: 100px;
+    display: grid;
+    height: 200px;
+    top: 10px;
+    width: 150px;
   }
   .card__content h3 {
     margin: 10px 0;
+  }
+  .card__info {
+    flex-wrap: wrap;
+  }
+  .card__info--item {
+    flex: 100%;
+  }
+  .pages {
+    grid-column: 1/5;
+    text-align: center;
   }
 }
 .navbar {
@@ -388,12 +414,13 @@ main {
   padding: 0 10px;
 }
 .nav__search {
-  padding: 20px;
+  padding: 0 20px;
 }
 .nav__search.active {
   display: none;
 }
 .nav__menu {
+  z-index: 5;
   align-items: center;
   position: fixed;
   left: -100%;
@@ -459,14 +486,7 @@ main {
     display: none;
   }
   .navbar {
-    min-width: max-content;
-    justify-content: flex-start;
-  }
-  .navbar__logo {
-    max-height: 80px;
-  }
-  .navbar__logo > img {
-    max-height: 80px;
+    justify-content: space-between;
   }
   .nav {
     width: 100%;
@@ -486,14 +506,13 @@ main {
     */
   }
   .nav__menu {
-    min-width: 100%;
     display: flex;
     align-items: center;
     position: static;
     left: 0;
     top: 0;
     transition: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: transparent;
   }
@@ -505,11 +524,7 @@ main {
     position: relative;
     border-bottom: none;
     align-items: center;
-    font-size: 1.3rem;
     padding: 0px 20px;
-  }
-  .nav__search {
-    font-size: 1.3rem;
   }
   .nav__search:hover {
     color: #F60B0E;
@@ -565,6 +580,11 @@ header {
   padding: 5px;
 }
 
+@media (min-width: 768px) {
+  header {
+    height: 250px;
+  }
+}
 footer::after {
   content: "";
   background: url("/resources/images/gallery/room-7.jpg");
