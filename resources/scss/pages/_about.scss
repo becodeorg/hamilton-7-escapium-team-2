@@ -1,7 +1,8 @@
 @use "../util/fonts" as *;
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
-
+@use "../layout/footer" as *;
+@use "../layout/navbar" as *;
 header {
   text-align: center;
   background: linear-gradient(
