@@ -10,128 +10,275 @@
 </head>
 <body id="blogs">
     <header class="blogs_header">
-
+        <section class="navbar">
+            <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
+    
+            <nav class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="index.html">home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="rooms.html">rooms</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">booking</a></li>
+                        <li class="nav__item"><a class="nav__link" href="blogs.html">blog</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">contacts</a></li>
+                    </ul>
+                    <div class="booking__container">
+                        <div class="booking__button nav__item">
+                            <a class="booking__button--link" href="contact.html">Book Now!</a>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass nav__search"></i>
+                        <div class="booking__login nav__item">
+                            <i class=" fa-regular fa-user"></i>
+                            <a class="login--link" href="#">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Booking and Login  -->
+            </nav>
+    
+        </section>
+        <div class="blogs_header-text">
+            <h1>blog<span>.</span></h1>
+            <h2>ESCAPIUM <span>> BLOG</span></h2>
+        </div>
     </header>
-    <section class="blogs_blogPosts">
-        <div class="blogs_card">
-            <div class="blogs_card-image">
-                <img src="resources/images/gallery/room-9.jpg" alt="" srcset="">
-            </div>
-            <div class="blogs_card-content">
-                <p>Promotion</p>
+    <div class="blogs_bigContainer">
+        <div class="blogs_bigContainer-firstChild">
+            <section class="blogs_blogPosts">
+                <div class="blogs_card">
+                    <div class="blogs_card-image">
+                        <img src="resources/images/gallery/room-9.jpg" alt="" srcset="">
+                    </div>
+                    <div class="blogs_card-content">
+                        <p>Promotion</p>
+                        <hr />
+                        <h2>Kidnapped Game Now Open</h2>
+                        <ul>
+                            <li class="blogs_card-content-calendar" >SEPTEMBER 4, 2018</li>
+                            <li class="blogs_card-content-user" >ANDY BERNARD</li>
+                            <li class="blogs_card-content-comment" >4 COMMENTS</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
+                        <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+                    </div>
+                </div>
+                <div class="blogs_card">
+                    <div class="blogs_card-image">
+                        <img src="resources/images/gallery/room-7.jpg" alt="" srcset="">
+                    </div>
+                    <div class="blogs_card-content">
+                        <p>Promotion</p>
+                        <hr />
+                        <h2>Kidnapped Game Now Open</h2>
+                        <ul>
+                            <li class="blogs_card-content-calendar">SEPTEMBER 4, 2018</li>
+                            <li class="blogs_card-content-user">BETTY DRAPER</li>
+                            <li class="blogs_card-content-comment">NO COMMENTS</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
+                        <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+                    </div>
+                </div>
+                <div class="blogs_card">
+                    <div class="blogs_card-image">
+                        <img src="resources/images/gallery/post-img-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="blogs_card-content">
+                        <p>Corporate events</p>
+                        <hr />
+                        <h2>What is an escape room?</h2>
+                        <ul>
+                            <li class="blogs_card-content-calendar">APRIL 4, 2018</li>
+                            <li class="blogs_card-content-user">ANDY BERNARD</li>
+                            <li class="blogs_card-content-comment">NO COMMENTS</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
+                        <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+                    </div>
+                </div>
+                <div class="blogs_nav">
+                    <a class="linkTransparent-small" href="#" target="_blank" rel="noopener noreferrer">1</a>
+                </div>
+            </section>
+        </div>
+        <div class="blogs_bigContainer-secondChild">
+            <section class="blogs_categories">
+                <h2>Categories</h2>
                 <hr />
-                <h2>Kidnapped Game Now Open</h2>
                 <ul>
-                    <li class="blogs_card-content-calendar" >SEPTEMBER 4, 2018</li>
-                    <li class="blogs_card-content-user" >ANDY BERNARD</li>
-                    <li class="blogs_card-content-comment" >4 COMMENTS</li>
+                    <li>Corporate events</li>
+                    <li>Leadership Development</li>
+                    <li>Motivation</li>
+                    <li>Observe interaction</li>
+                    <li>Promotion</li>
+                    <li>Synergy</li>
+                    <li>Team building</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
-                <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-            </div>
-        </div>
-        <div class="blogs_card">
-            <div class="blogs_card-image">
-                <img src="resources/images/gallery/room-7.jpg" alt="" srcset="">
-            </div>
-            <div class="blogs_card-content">
-                <p>Promotion</p>
+            </section>
+            <section class="blogs_recentPosts">
+                <h2>Recent Posts</h2>
                 <hr />
-                <h2>Kidnapped Game Now Open</h2>
-                <ul>
-                    <li class="blogs_card-content-calendar">SEPTEMBER 4, 2018</li>
-                    <li class="blogs_card-content-user">BETTY DRAPER</li>
-                    <li class="blogs_card-content-comment">NO COMMENTS</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
-                <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-            </div>
-        </div>
-        <div class="blogs_card">
-            <div class="blogs_card-image">
-                <img src="resources/images/gallery/post-img-2.jpg" alt="" srcset="">
-            </div>
-            <div class="blogs_card-content">
-                <p>Corporate events</p>
+                <div class="recentPost"><p>04/09/2018</p><hr><h3>Kidnapped game now Open</h3></div>
+                <div class="recentPost"><p>04/09/2018</p><hr><h3>Perfect for teambuilding</h3></div>
+                <div class="recentPost"><p>04/04/2018</p><hr><h3>What is an escape room?</h3></div>
+                <div class="recentPost"><p>12/09/2017</p><hr><h3>Perfect for teambuilding</h3></div>
+            </section>
+            <section class="blogs_tags">
+                <h2>Tags</h2>
                 <hr />
-                <h2>What is an escape room?</h2>
-                <ul>
-                    <li class="blogs_card-content-calendar">APRIL 4, 2018</li>
-                    <li class="blogs_card-content-user">ANDY BERNARD</li>
-                    <li class="blogs_card-content-comment">NO COMMENTS</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi aliquid dolorem unde. Facilis quis magnam debitis perspiciatis ea libero error sint architecto, voluptatum aliquid aut minus cumque molestiae odit.</p>
-                <a class="linkTransparent" href="#" target="_blank" rel="noopener noreferrer">Read More</a>
-            </div>
+                <div class="blogs_tags-container">
+                    <a href="#" class="linkTransparent">CLOCK</a>
+                    <a href="#" class="linkTransparent">ESCAPE</a>
+                    <a href="#" class="linkTransparent">GAME</a>
+                    <a href="#" class="linkTransparent">MECHANISMS</a>
+                    <a href="#" class="linkTransparent">MYSTERY</a>
+                    <a href="#" class="linkTransparent">PROMO</a>
+                    <a href="#" class="linkTransparent">PUZZLE</a>
+                    <a href="#" class="linkTransparent">ROOM</a>
+                </div>
+            </section>
+            <section class="blogs_instagram">
+                <h2>Instagram</h2>
+                <hr />
+                <div class="blogs_instagram-container">
+                    <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
+                    <img src="resources/images/gallery/gallery-6.jpg" alt="" srcset="">
+                    <img src="resources/images/gallery/gallery-2.jpg" alt="" srcset="">
+                    <img src="resources/images/gallery/gallery-1.jpg" alt="" srcset="">
+                    <img src="resources/images/gallery/gallery-8.jpg" alt="" srcset="">
+                    <img src="resources/images/gallery/gallery-4.jpg" alt="" srcset="">
+                </div>
+                <div class="blogs_instagram-link">
+                    <a href="#" class="linkTransparent"><i class="fa-brands fa-instagram"></i> Follow on Instagram</a>
+                </div>
+            </section>
+            <section class="blogs_archives">
+                <h2>Archives</h2>
+                <hr />
+                <div class="blogs_archives-container">
+                    <a href="">september 2018</a>
+                    <a href="">april 2018</a>
+                    <a href="">september 2017</a>
+                    <a href="">november 2016</a>
+                    <a href="">october 2016</a>
+                    <a href="">september 2016</a>
+                </div>        
+            </section>
         </div>
-        <div class="blogs_nav">
-            <a class="linkRed" href="#" target="_blank" rel="noopener noreferrer">1</a>
-        </div>
-    </section>
-    <section class="blogs_categories">
-        <h2>Categories</h2>
-        <hr />
-        <ul>
-            <li>Corporate events</li>
-            <li>Leadership</li>
-            <li>Motivation</li>
-            <li>Observe interaction</li>
-            <li>Promotion</li>
-            <li>Synergy</li>
-            <li>Team building</li>
-        </ul>
-    </section>
-    <section class="blogs_recentPosts">
-        <h2>Recent Posts</h2>
-        <hr />
-        <div class="recentPost"><p>04/09/2018</p><hr><h3>Kidnapped game now Open</h3></div>
-        <div class="recentPost"><p>04/09/2018</p><hr><h3>Perfect for teambuilding</h3></div>
-        <div class="recentPost"><p>04/04/2018</p><hr><h3>What is an escape room?</h3></div>
-        <div class="recentPost"><p>12/09/2017</p><hr><h3>Perfect for teambuilding</h3></div>
-    </section>
-    <section class="blogs_tags">
-        <h2>Tags</h2>
-        <hr />
-        <div class="blogs_tags-container">
-            <a href="#" class="linkTransparent">CLOCK</a>
-            <a href="#" class="linkTransparent">ESCAPE</a>
-            <a href="#" class="linkTransparent">GAME</a>
-            <a href="#" class="linkTransparent">MECHANISMS</a>
-            <a href="#" class="linkTransparent">MYSTERY</a>
-            <a href="#" class="linkTransparent">PROMO</a>
-            <a href="#" class="linkTransparent">PUZZLE</a>
-            <a href="#" class="linkTransparent">ROOM</a>
-        </div>
-    </section>
-    <section class="blogs_instagram">
-        <h2>Instagram</h2>
-        <hr />
-        <div class="blogs_instagram-container">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-            <img src="resources/images/gallery/gallery-7.jpg" alt="" srcset="">
-        </div>
-        <div class="blogs_instagram-link">
-            <a href="#" class="linkTransparent"><i class="fa-brands fa-instagram"></i> Follow on Instagram</a>
-        </div>
-    </section>
-    <section class="blogs_archives">
-        <h2>Archives</h2>
-        <hr />
-        <div class="blogs_archives-container">
-            <a href="">september 2018</a>
-            <a href="">april 2018</a>
-            <a href="">september 2017</a>
-            <a href="">november 2016</a>
-            <a href="">october 2016</a>
-            <a href="">september 2016</a>
-        </div>        
-    </section>
+    </div>
     <footer>
-
-    </footer>
+        <div class="footerNumbers">
+          <p class="escapiumParagraph">01</p>
+          <div class="footerLines"></div>
+        </div>
+        <div class="sectionsfooter" id="ouraddress">
+          <h3>Our Address</h3>
+          <p class="escapiumParagraph">
+            Escape Room Ltd.<br />
+            2390 RoadHill St. Suite 100 <br />
+            North Downtown, NY 82153
+          </p>
+          <p class="escapiumParagraph">Email: <span>info@escapium.com </span></p>
+        </div>
+        <div class="footerNumbers">
+          <p class="escapiumParagraph">02</p>
+          <div class="footerLines"></div>
+        </div>
+        <div class="sectionsfooter" id="usefullinks">
+          <h3>Useful Links</h3>
+          <a class="aUseful" href="about.html">ABOUT</a
+          ><a class="aUseful" href="blogs.html">GALLERY</a
+          ><a class="aUseful" href="singleRoom.html">PLAN AN EVENT</a
+          ><a class="aUseful" href="singleRoom.html">PRICING PACKAGES</a
+          ><a class="aUseful" href="about.html">FAQ</a
+          ><a id="lastAUseful" class="aUseful" href="contact.html">CONTACT</a>
+        </div>
+        <div class="footerNumbers">
+          <p class="escapiumParagraph">03</p>
+          <div class="footerLines"></div>
+        </div>
+        <div class="sectionsfooter" id="workinghours">
+          <h3>Working Hours</h3>
+          <table class="escapiumParagraph">
+            <tr>
+              <td>Monday:</td>
+              <td class="hours">6pm - 11pm</td>
+            </tr>
+            <tr>
+              <td>Tuesday:</td>
+              <td class="hours">5pm - 11pm</td>
+            </tr>
+            <tr>
+              <td>Wednesday:</td>
+              <td class="hours">Closed</td>
+            </tr>
+            <tr>
+              <td>Thursday:</td>
+              <td class="hours">6pm - 11pm</td>
+            </tr>
+            <tr>
+              <td>Friday:</td>
+              <td class="hours">2pm - 11pm</td>
+            </tr>
+            <tr>
+              <td>Saturday:</td>
+              <td class="hours">11am - 11pm</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td class="hours">11am - 11pm</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footerNumbers">
+          <p class="escapiumParagraph">04</p>
+          <div class="footerLines"></div>
+        </div>
+        <div class="sectionsfooter" id="sociallinks">
+          <h3>Social Links</h3>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-yelp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright">
+          <div id="footerEscapiumLogo">
+            <img
+              src="./resources/images/logo/footer-logo.png"
+              alt="escapium"
+              width="150px"
+            />
+          </div>
+          <p class="escapiumParagraph">
+            Copyright © 2022 Escapium | All Rights Reserved
+          </p>
+        </div>
+      </footer>  
+    <script src="resources/js/index.js"></script>
 </body>
 </html>
