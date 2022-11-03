@@ -14,7 +14,7 @@
     <script src="resources/js/index.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="headerAbout">
       <section class="navbar">
         <a class="navbar__logo" href="index.html"
           ><img src="resources/images/logo/logo.png" alt="Escapium Logo"
@@ -84,96 +84,104 @@
       </section>
     </header>
     <main>
-      <section id="howToPlay" class="aboutSections aboutCenterSections">
-        <div class="play">
-          <h2>How to Play</h2>
-          <i class="fa-solid fa-user-check"></i>
-          <h3>Who Should Play</h3>
-          <p class="pPlay">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
-            nobis accusamus.
-          </p>
+      <section id="howToPlayVideo" class="aboutSections aboutCenterSections">
+        <h2>How to Play</h2>
+        <div id="howToPlay">
+          <div class="play">
+            <i class="fa-solid fa-user-check"></i>
+            <h3>Who Should Play</h3>
+            <p class="pPlay">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
+              nobis accusamus.
+            </p>
+          </div>
+          <div class="play">
+            <i class="fa-solid fa-info"></i>
+            <h3>For Team Building</h3>
+            <p class="pPlay">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
+              nobis accusamus.
+            </p>
+          </div>
+          <div class="play">
+            <i class="fa-solid fa-medal"></i>
+            <h3>For Special Events</h3>
+            <p class="pPlay">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
+              nobis accusamus.
+            </p>
+          </div>
         </div>
-        <div class="play">
-          <i class="fa-solid fa-info"></i>
-          <h3>For Team Building</h3>
-          <p class="pPlay">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
-            nobis accusamus.
-          </p>
+        <div id="videoDiv">
+          <img
+            id="video"
+            src="./resources/images/gallery/video-placeholder.jpg"
+          />
         </div>
-        <div class="play">
-          <i class="fa-solid fa-medal"></i>
-          <h3>For Special Events</h3>
-          <p class="pPlay">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
-            nobis accusamus.
-          </p>
-        </div>
-        <img />
       </section>
-      <section id="certificates" class="aboutSections aboutCenterSections">
+      <section class="aboutSections aboutCenterSections">
         <h3>Certificates</h3>
-        <img
-          class="certificates"
-          src="./resources/images/gallery/certificate-1.jpg"
-          width="80%"
-          alt="certificate-1"
-          title="Certificate 1"
-        /><img
-          class="certificates"
-          src="./resources/images/gallery/certificate-2.jpg"
-          width="80%"
-          alt="certificat-2"
-          title="Certificate 2"
-        /><img
-          class="certificates"
-          src="./resources/images/gallery/certificate-3.jpg"
-          width="80%"
-          alt="certificate-3"
-          title="Certificate 3"
-        /><img
-          class="certificates"
-          src="./resources/images/gallery/certificate-4.jpg"
-          width="80%"
-          alt="certificate-4"
-          title="Certificate 4"
-        />
+        <div id="certificates">
+          <img
+            class="certificates"
+            src="./resources/images/gallery/certificate-1.jpg"
+            alt="certificate-1"
+            title="Certificate 1"
+          /><img
+            class="certificates"
+            src="./resources/images/gallery/certificate-2.jpg"
+            alt="certificat-2"
+            title="Certificate 2"
+          /><img
+            class="certificates"
+            src="./resources/images/gallery/certificate-3.jpg"
+            alt="certificate-3"
+            title="Certificate 3"
+          /><img
+            class="certificates"
+            src="./resources/images/gallery/certificate-4.jpg"
+            alt="certificate-4"
+            title="Certificate 4"
+          />
+        </div>
       </section>
-      <section id="ourTeam" class="aboutSections aboutCenterSections">
+      <section class="aboutSections aboutCenterSections">
         <h3>Our Team</h3>
-        <div class="teamMembers">
-          <img
-            src="./resources/images/gallery/member-photo-1.jpg"
-            width="90%"
-            alt="member-photo-1"
-            title="Stanley Hudson"
-          />
-          <h4>Stanley Hudson</h4>
-          <p>Co-Creator</p>
-        </div>
-        <div class="teamMembers">
-          <img
-            src="./resources/images/gallery/member-photo-2.jpg"
-            width="90%"
-            alt="member-photo-2"
-            title="Mona Sterling"
-          />
-          <h4>Mona Sterling</h4>
-          <p>Co-Creator</p>
-        </div>
-        <div class="teamMembers">
-          <img
-            src="./resources/images/gallery/member-photo-3.jpg"
-            width="90%"
-            alt="member-photo-3"
-            title="Trudy Campbell"
-          />
-          <h4>Trudy Campbell</h4>
-          <p>Co-Creator</p>
+        <div id="ourTeam">
+          <div class="teamMembers">
+            <img
+              src="./resources/images/gallery/member-photo-1.jpg"
+              width="90%"
+              alt="member-photo-1"
+              title="Stanley Hudson"
+              <
+            />
+            <h4>Stanley Hudson</h4>
+            <p>Co-Creator</p>
+          </div>
+          <div class="teamMembers">
+            <img
+              src="./resources/images/gallery/member-photo-2.jpg"
+              width="90%"
+              alt="member-photo-2"
+              title="Mona Sterling"
+            />
+            <h4>Mona Sterling</h4>
+            <p>Co-Creator</p>
+          </div>
+          <div class="teamMembers">
+            <img
+              src="./resources/images/gallery/member-photo-3.jpg"
+              width="90%"
+              alt="member-photo-3"
+              title="Trudy Campbell"
+            />
+            <h4>Trudy Campbell</h4>
+            <p>Co-Creator</p>
+          </div>
         </div>
       </section>
       <section
@@ -181,18 +189,33 @@
         class="aboutSections aboutCenterSections peopleSay"
       >
         <h3 class="peopleSay">What People Say</h3>
-        <a class="peopleSay"> Read All Testimonials</a>
-        <p class="peopleSay">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
-          fuga amet voluptatibus unde, voluptatum nulla corrupti nobis
-          accusamus.
-        </p>
-        <img
-          class="peopleSay"
-          src="./resources/images/avatars/comment-avatar-2.png"
-          width="25%"
-        />
-        <p id="tiffany" class="peopleSay">TIFFANY</p>
+        <a class="peopleSay" href="singleBlog.html"> Read All Testimonials</a>
+        <div id="commentAaron">
+          <p class="peopleSay">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
+            nobis accusamus.
+          </p>
+          <img
+            class="peopleSay"
+            src="./resources/images/avatars/comment-avatar-1.png"
+            width="25%"
+          />
+          <p class="peopleSay">AARON</p>
+        </div>
+        <div id="commentTiffany">
+          <p class="peopleSay commentName">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium fuga amet voluptatibus unde, voluptatum nulla corrupti
+            nobis accusamus.
+          </p>
+          <img
+            class="peopleSay"
+            src="./resources/images/avatars/comment-avatar-2.png"
+            width="25%"
+          />
+          <p class="peopleSay commentName">TIFFANY</p>
+        </div>
       </section>
       <section id="FAQ" class="aboutSections">
         <div id="FAQheader">

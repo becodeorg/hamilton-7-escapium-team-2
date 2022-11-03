@@ -407,6 +407,13 @@ main {
   flex-direction: column;
 }
 
+#headerAbout {
+  text-align: center;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
+  height: 200px;
+  background-size: cover;
+}
+
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -423,11 +430,16 @@ h2 {
   margin-bottom: 40px;
 }
 
+#video {
+  width: 90%;
+}
+
 #certificates {
   align-items: center;
 }
 
 .certificates {
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -443,8 +455,12 @@ h2 {
 .peopleSay {
   margin-bottom: 20px;
 }
+.peopleSay a {
+  color: #F60B0E;
+  text-decoration: underline;
+}
 
-#tiffany {
+.commentName {
   font-size: smaller;
   font-weight: 900;
 }
@@ -457,22 +473,61 @@ h2 {
 }
 
 #h3FAQ {
+  text-align: center;
   color: #222222;
+}
+
+#FAQheader p {
+  text-align: center;
+  color: #777;
 }
 
 .faqQuestions {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: #222222;
 }
 .faqQuestions i {
-  margin-right: 10px;
-  color: #222222;
+  text-align: center;
+  margin-right: 30px;
+  color: #717171;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #f6f6f6;
 }
 .faqQuestions p {
-  justify-content: center;
+  color: #222222;
+  font-weight: 800;
 }
 
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #video {
+    width: 80%;
+  }
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .certificates {
+    width: 40%;
+  }
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+  }
+}
 #blogs {
   background-color: #222222;
   font-family: "Hind";
