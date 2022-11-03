@@ -59,14 +59,22 @@ h2 {
 .peopleSay {
   margin-bottom: 20px;
   a {
+    margin-bottom: 20px;
     color: $escapiumRed;
     text-decoration: underline;
   }
 }
-
+#commentAaron {
+  display: none;
+}
 .commentName {
   font-size: smaller;
   font-weight: 900;
+}
+
+#arrows {
+  display: none;
+  flex-direction: row;
 }
 
 #FAQ {
@@ -134,5 +142,30 @@ h2 {
   #ourTeam {
     display: flex;
     flex-direction: row;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #commentAaron {
+    display: block;
+  }
+
+  #commentTiffany {
+    display: block;
+  }
+
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #slash {
+    transform: scaleX(-1);
   }
 }
