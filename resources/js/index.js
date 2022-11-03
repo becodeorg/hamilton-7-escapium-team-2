@@ -21,8 +21,8 @@ link.forEach(n => n.addEventListener("click", (e) => {
 
 // Carousel Room
 const cards = document.getElementsByClassName("card");
-const nextButton = document.getElementById("btn-next");
-const prevButton = document.getElementById("btn-prev");
+const nextButton = document.querySelector(".btn-next");
+const prevButton = document.querySelector(".btn-prev");
 let position = 0;
 const numberOfSlides = cards.length;
 
@@ -45,7 +45,7 @@ const handleMoveToNextSlide = function (e) {
         position++;
     }
     // make current slide visible
-    slides[position].classList.add("card-item-visible");
+    cards[position].classList.add("card-item-visible");
 }
 
 const handleMoveToPrevSlide = function (e) {
@@ -59,8 +59,9 @@ const handleMoveToPrevSlide = function (e) {
         position--;
     }
     // make current slide visible
-    slides[position].classList.add("card-item-visible");
+    cards[position].classList.add("card-item-visible");
 }
 
 nextButton.addEventListener("click", handleMoveToNextSlide);
 prevButton.addEventListener("click", handleMoveToPrevSlide);
+

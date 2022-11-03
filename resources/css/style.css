@@ -39,7 +39,7 @@ li {
 }
 
 .navbar {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(27, 27, 27, 0.7889530812) 0%, rgba(27, 27, 27, 0.9514180672) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,7 +117,7 @@ li {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (min-width: 780px) {
+@media (min-width: 961px) {
   .hamburger {
     display: none;
   }
@@ -129,15 +129,7 @@ li {
     /*
             &--redbar {
 
-                position: relative;
-                left: -80px;
-                display: block;
-                width: 50px;
-                height: 3px;
-                background-color: $escapiumRed;
-                -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-                transform: translateY(23px) translateX(4px) rotate(-45deg);
+
             }
         */
   }
@@ -161,6 +153,28 @@ li {
     border-bottom: none;
     align-items: center;
     padding: 0px 20px;
+    line-height: 0px;
+    z-index: 5;
+  }
+  .nav__link:hover {
+    color: #fefefe;
+  }
+  .nav__link:hover::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -25px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #F60B0E;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(23px) translateX(4px) rotate(-45deg);
+  }
+  .nav__search {
+    padding: 0px 10px;
   }
   .nav__search:hover {
     color: #F60B0E;
@@ -180,6 +194,23 @@ li {
   }
   .booking__button {
     display: block;
+  }
+  .booking__button--link {
+    width: 250px;
+    border: 1px solid #777;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 0;
+    color: #fefefe;
+    font-weight: 600;
+    width: 120px;
+    display: inline-block;
+    height: 30px;
+    padding: 15px;
+  }
+  .booking__button--link:hover {
+    background-color: #F60B0E;
+    border: none;
   }
   .booking__login--link {
     color: #fefefe;
@@ -660,6 +691,7 @@ main {
 }
 .linkTransparent:hover {
   background-color: #F60B0E;
+  border: none;
 }
 
 .rooms {
@@ -671,7 +703,7 @@ main {
 }
 
 .two,
-.twelve {
+.ten {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-2.jpg) no-repeat center 10%;
 }
 
@@ -901,6 +933,7 @@ main {
 }
 .room__linkTransparent:hover {
   background-color: #F60B0E;
+  border: none;
 }
 .room__carousel {
   padding: 0 15px;

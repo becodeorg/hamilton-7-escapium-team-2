@@ -2,7 +2,7 @@
 // Mobile
 
 .navbar {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(27, 27, 27, 0.788953081232493) 0%, rgba(27, 27, 27, 0.9514180672268907) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +93,7 @@
 
 // Desktop
 
-@media(min-width:780px) {
+@media(min-width:961px) {
   .hamburger {
     display: none;
   }
@@ -109,7 +109,6 @@
     &__menu {
       display: flex;
       align-items: center;
-
       position: static;
       left: 0;
       top: 0;
@@ -129,25 +128,45 @@
       border-bottom: none;
       align-items: center;
       padding: 0px 20px;
-
+      line-height: 0px;
+      z-index: 5;
     }
+
+    &__link {
+
+      &:hover {
+        color: $whiteBackground;
+
+
+        &::after {
+          z-index: -1;
+
+          content: "";
+          position: absolute;
+          left: 25%;
+          top: -25px;
+          display: block;
+          width: 30px;
+          height: 2px;
+          background-color: $escapiumRed;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          transform: translateY(23px) translateX(4px) rotate(-45deg);
+        }
+      }
+    }
+
 
     /*
             &--redbar {
 
-                position: relative;
-                left: -80px;
-                display: block;
-                width: 50px;
-                height: 3px;
-                background-color: $escapiumRed;
-                -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-                transform: translateY(23px) translateX(4px) rotate(-45deg);
+                
             }
         */
 
     &__search {
+      padding: 0px 10px;
+
       &:hover {
         color: $escapiumRed;
       }
@@ -172,6 +191,14 @@
 
     &__button {
       display: block;
+
+      &--link {
+        @include button;
+        width: 120px;
+        display: inline-block;
+        height: 30px;
+        padding: 15px;
+      }
     }
 
     &__login {
