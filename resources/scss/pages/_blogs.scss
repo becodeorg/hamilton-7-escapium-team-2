@@ -3,20 +3,24 @@
 #blogs{
     background-color: $darkBackground;
     font-family: $escapiumFontParagraph;
-    
-}
-
-body{
     color: $globalFontColor;
+    
+    
+    h2,h3{
+        color: $whiteBackground;
+    }
+    
+    h2{
+        padding-bottom: 10px;
+    }
+    hr{
+        width: 35px;
+        border-top: 4px solid #71717159;
+        color: #71717159;
+        height: 3px;
+    }
 }
 
-h2,h3{
-    color: $whiteBackground;
-}
-
-h2{
-    padding-bottom: 10px;
-}
 
 
 .blogs_header-text{
@@ -130,12 +134,7 @@ h2{
     }
 }
 
-hr{
-    width: 35px;
-    border-top: 4px solid #71717159;
-    color: #71717159;
-    height: 3px;
-}
+
 .blogs_instagram-link{
     width: 100%;
     display: flex;
