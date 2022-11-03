@@ -4,7 +4,8 @@
 @forward "pages/about";
 @forward "pages/blogs";
 @forward "pages/contacts";
-@forward "./layout/footer";
 
 // Layout
 @forward "layout/navbar";
+@forward "./layout/footer";
+@forward "./layout/header";
