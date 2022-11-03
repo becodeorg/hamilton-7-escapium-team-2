@@ -11,44 +11,48 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="./resources/js/index.js" defer></script>
+    <script src="resources/js/index.js" defer></script>
   </head>
   <body>
     <header>
       <section class="navbar">
-        <a class="navbarlogo" href="index.html"
+        <a class="navbar__logo" href="index.html"
           ><img src="resources/images/logo/logo.png" alt="Escapium Logo"
         /></a>
 
         <nav class="nav">
-          <div class="navmenu">
-            <ul class="navlist">
-              <li class="navitem">
-                <a class="navlink" href="index.html">home</a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">home</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="about.html">about</a>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">about</a>
               </li>
-              <li class="navitem"><a class="navlink" href="#">features</a></li>
-              <li class="navitem">
-                <a class="navlink" href="rooms.html">rooms</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">features</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="contact.html">booking</a>
+              <li class="nav__item">
+                <a class="nav__link" href="rooms.html">rooms</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="blogs.html">blog</a>
+              <li class="nav__item">
+                <a class="nav__link" href="contact.html">booking</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="contact.html">contacts</a>
+              <li class="nav__item">
+                <a class="nav__link" href="blogs.html">blog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contact.html">contacts</a>
               </li>
             </ul>
-            <div class="bookingcontainer">
-              <div class="bookingbutton navitem">
-                <a class="bookingbutton--link" href="contact.html">Book Now!</a>
+            <div class="booking__container">
+              <div class="booking__button nav__item">
+                <a class="booking__button--link" href="contact.html"
+                  >Book Now!</a
+                >
               </div>
-              <i class="fa-solid fa-magnifying-glass navsearch"></i>
-              <div class="bookinglogin navitem">
+              <i class="fa-solid fa-magnifying-glass nav__search"></i>
+              <div class="booking__login nav__item">
                 <i class="fa-regular fa-user"></i>
                 <a class="booking__login--link" href="#">Sign in</a>
               </div>
@@ -63,20 +67,6 @@
           </div>
           <!-- Booking and Login  -->
         </nav>
-      </section>
-      <section class="hero">
-        <h1>about<span class="herotitle">.</span></h1>
-        <ul class="herobreadcrumb">
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="index.html">HOME</a>
-          </li>
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="rooms.html">ROOMS</a>
-          </li>
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="#">GRID 4 COLS</a>
-          </li>
-        </ul>
       </section>
     </header>
     <main>
@@ -114,19 +104,27 @@
       <section id="certificates" class="aboutSections aboutCenterSections">
         <h3>Certificates</h3>
         <img
+          class="certificates"
           src="./resources/images/gallery/certificate-1.jpg"
+          width="80%"
           alt="certificate-1"
           title="Certificate 1"
         /><img
+          class="certificates"
           src="./resources/images/gallery/certificate-2.jpg"
+          width="80%"
           alt="certificat-2"
           title="Certificate 2"
         /><img
+          class="certificates"
           src="./resources/images/gallery/certificate-3.jpg"
+          width="80%"
           alt="certificate-3"
           title="Certificate 3"
         /><img
+          class="certificates"
           src="./resources/images/gallery/certificate-4.jpg"
+          width="80%"
           alt="certificate-4"
           title="Certificate 4"
         />
@@ -136,6 +134,7 @@
         <div class="teamMembers">
           <img
             src="./resources/images/gallery/member-photo-1.jpg"
+            width="90%"
             alt="member-photo-1"
             title="Stanley Hudson"
           />
@@ -145,6 +144,7 @@
         <div class="teamMembers">
           <img
             src="./resources/images/gallery/member-photo-2.jpg"
+            width="90%"
             alt="member-photo-2"
             title="Mona Sterling"
           />
@@ -154,6 +154,7 @@
         <div class="teamMembers">
           <img
             src="./resources/images/gallery/member-photo-3.jpg"
+            width="90%"
             alt="member-photo-3"
             title="Trudy Campbell"
           />
@@ -169,7 +170,10 @@
           fuga amet voluptatibus unde, voluptatum nulla corrupti nobis
           accusamus.
         </p>
-        <img src="./resources/images/avatars/comment-avatar-2.png" />
+        <img
+          src="./resources/images/avatars/comment-avatar-2.png"
+          width="25%"
+        />
         <p id="tiffany">TIFFANY</p>
       </section>
       <section id="FAQ" class="aboutSections">

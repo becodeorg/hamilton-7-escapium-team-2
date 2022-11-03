@@ -1,6 +1,6 @@
 @use "../util/utilities" as *;
-
 // Mobile
+
 .navbar {
   background: linear-gradient(
     90deg,
@@ -11,8 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   &__logo {
     max-height: 50px;
@@ -37,7 +37,7 @@
   }
 
   &__menu {
-    z-index: 5;
+    font-weight: 200;
     align-items: center;
     position: fixed;
     left: -100%;
@@ -57,32 +57,26 @@
     padding: 0px 30px;
     margin-left: 2px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
     text-transform: capitalize;
     border-bottom: 1px solid $navFontcolor;
   }
-
-  &__link {
-    color: $whiteBackground;
-  }
 }
 
-.booking {
-  &__button {
-    display: none;
-  }
+.booking__button {
+  display: none;
+}
 
-  &__login {
-    &--link {
-      color: $whiteBackground;
+/* &__login {
+  &--link {
+    color: $whiteBackground;
 
-      &:hover {
-        color: $escapiumRed;
-      }
+    &:hover {
+      color: $escapiumRed;
     }
   }
-}
+} */
 
 .bar {
   display: block;
@@ -112,7 +106,8 @@
 }
 
 // Desktop
-@media (min-width: 1024px) {
+
+@media (min-width: 780px) {
   .hamburger {
     display: none;
   }
@@ -120,37 +115,36 @@
   .navbar {
     justify-content: space-between;
   }
-}
 
-.nav {
-  width: 100%;
-
-  &__menu {
-    display: flex;
-    align-items: center;
-
-    position: static;
-    left: 0;
-    top: 0;
-    transition: 0;
+  .nav {
     width: 100%;
-    height: auto;
-    background-color: transparent;
-  }
 
-  &__list {
-    display: flex;
-    flex: 60%;
-  }
+    &__menu {
+      display: flex;
+      align-items: center;
 
-  &__item {
-    position: relative;
-    border-bottom: none;
-    align-items: center;
-    padding: 0px 20px;
-  }
+      position: static;
+      left: 0;
+      top: 0;
+      transition: 0;
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+    }
 
-  /*
+    &__list {
+      display: flex;
+      flex: 60%;
+    }
+
+    &__item {
+      position: relative;
+      border-bottom: none;
+      align-items: center;
+      padding: 0px 20px;
+    }
+
+    /*
             &--redbar {
 
                 position: relative;
@@ -165,42 +159,43 @@
             }
         */
 
-  &__search {
-    &:hover {
-      color: $escapiumRed;
-    }
-
-    &::after {
-      content: "|";
-      position: relative;
-      left: 15px;
-      font-size: 1.8rem;
-      color: $navFontcolor;
-    }
-  }
-}
-
-.booking {
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex: 40%;
-  }
-
-  &__button {
-    display: block;
-  }
-
-  &__login {
-    &--link {
-      color: $whiteBackground;
-      text-transform: uppercase;
-      font-weight: 200;
-      padding-left: 5px;
-
+    &__search {
       &:hover {
         color: $escapiumRed;
+      }
+
+      &::after {
+        content: "|";
+        position: relative;
+        left: 15px;
+        font-size: 1.8rem;
+        color: $navFontcolor;
+      }
+    }
+  }
+
+  .booking {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex: 40%;
+    }
+
+    &__button {
+      display: block;
+    }
+
+    &__login {
+      &--link {
+        color: $whiteBackground;
+        text-transform: uppercase;
+        font-weight: 200;
+        padding-left: 5px;
+
+        &:hover {
+          color: $escapiumRed;
+        }
       }
     }
   }

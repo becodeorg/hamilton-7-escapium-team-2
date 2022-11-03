@@ -18,7 +18,20 @@ h2 {
   text-align: center;
 }
 
+#certificates {
+  align-items: center;
+}
+
+.certificates {
+  margin-bottom: 20px;
+}
+
+.teamMembers {
+  margin-bottom: 20px;
+}
+
 #whatPeopleSay {
+  align-items: center;
   background-color: $darkestBackground;
 }
 
