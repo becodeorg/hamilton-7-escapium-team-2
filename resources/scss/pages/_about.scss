@@ -118,7 +118,9 @@ h2 {
     font-weight: 800;
   }
 }
-
+#hrAbout {
+  display: none;
+}
 @media only screen and (min-width: 410px) and (max-width: 768px) {
   #howToPlay {
     display: flex;
@@ -167,5 +169,18 @@ h2 {
 
   #slash {
     transform: scaleX(-1);
+  }
+
+  #hrAbout {
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  #faqquestions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
