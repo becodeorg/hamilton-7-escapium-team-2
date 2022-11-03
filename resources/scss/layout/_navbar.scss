@@ -1,20 +1,19 @@
 @use '../util/utilities' as *;
-
 // Mobile
+
 .navbar {
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 
-    &__logo {
-        max-height: 50px;
+  &__logo {
+    max-height: 50px;
 
-        >img {
-            max-height: 50px;
-        }
+    >img {
+      max-height: 50px;
     }
   }
 }
@@ -24,8 +23,8 @@
   align-items: center;
   padding: 0 10px;
 
-    &__search {
-        padding: 0 20px;
+  &__search {
+    padding: 0 20px;
 
     &.active {
       display: none;
@@ -33,6 +32,7 @@
   }
 
   &__menu {
+    font-weight: 200;
     align-items: center;
     position: fixed;
     left: -100%;
@@ -40,7 +40,7 @@
     transition: 0.3s;
     width: 70%;
     height: 100%;
-    background-color: utilities.$sidebarBackground;
+    background-color: $sidebarBackground;
 
     &.active {
       left: 0;
@@ -52,10 +52,10 @@
     padding: 0px 30px;
     margin-left: 2px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
     text-transform: capitalize;
-    border-bottom: 1px solid utilities.$navFontcolor;
+    border-bottom: 1px solid $navFontcolor;
   }
 }
 
@@ -68,7 +68,7 @@
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: utilities.$whiteBackground;
+  background-color: $whiteBackground;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -92,49 +92,48 @@
 
 
 // Desktop
-@media(min-width:1024px) {
-    .hamburger {
-        display: none;
+
+@media(min-width:780px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+
+  }
+
+  .nav {
+    width: 100%;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+
+      position: static;
+      left: 0;
+      top: 0;
+      transition: 0;
+      width: 100%;
+      height: auto;
+      background-color: transparent;
     }
 
-    .navbar {
-        justify-content: space-between;
-
+    &__list {
+      display: flex;
+      flex: 60%;
     }
   }
 
-    .nav {
-        width: 100%;
+    &__item {
+      position: relative;
+      border-bottom: none;
+      align-items: center;
+      padding: 0px 20px;
 
+    }
 
-        &__menu {
-
-            display: flex;
-            align-items: center;
-
-            position: static;
-            left: 0;
-            top: 0;
-            transition: 0;
-            width: 100%;
-            height: auto;
-            background-color: transparent;
-        }
-
-        &__list {
-            display: flex;
-            flex: 60%;
-        }
-
-        &__item {
-            position: relative;
-            border-bottom: none;
-            align-items: center;
-            padding: 0px 20px;
-
-        }
-
-        /*
+    /*
             &--redbar {
 
                 position: relative;
@@ -149,47 +148,45 @@
             }
         */
 
-        &__search {
-            &:hover {
-                color: $escapiumRed;
-            }
+    &__search {
+      &:hover {
+        color: $escapiumRed;
+      }
 
-            &::after {
-                content: "|";
-                position: relative;
-                left: 15px;
-                font-size: 1.8rem;
-                color: $navFontcolor;
-            }
-        }
+      &::after {
+        content: "|";
+        position: relative;
+        left: 15px;
+        font-size: 1.8rem;
+        color: $navFontcolor;
+      }
+    }
+  
+
+  .booking {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex: 40%;
     }
 
-    .booking {
-        &__container {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            flex: 40%;
-        }
-
-        &__button {
-            display: block;
-        }
-
-        &__login {
-
-            &--link {
-                color: $whiteBackground;
-                text-transform: uppercase;
-                font-weight: 200;
-                padding-left: 5px;
-
-                &:hover {
-                    color: $escapiumRed;
-                }
-            }
-        }
+    &__button {
+      display: block;
     }
 
+    &__login {
 
+      &--link {
+        color: $whiteBackground;
+        text-transform: uppercase;
+        font-weight: 200;
+        padding-left: 5px;
+
+        &:hover {
+          color: $escapiumRed;
+        }
+      }
+    }
+  }
 }

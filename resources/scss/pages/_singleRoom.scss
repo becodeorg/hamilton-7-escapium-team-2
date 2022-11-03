@@ -1,0 +1,38 @@
+@use "../util/utilities" as *;
+
+.room {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6237088585434174) 75%, rgba(0, 0, 0, 0.4976584383753502) 100%),
+        url(../images/gallery/slide-3.jpg) no-repeat center;
+    height: 200px;
+    background-size: cover;
+
+
+    &__hero {
+        position: relative;
+        height: 70%;
+        text-align: left;
+        margin: 0;
+        padding: 0 15px;
+
+        h1 {
+
+            position: absolute;
+            bottom: 0;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    main {
+        background-color: $darkestBackground;
+    }
+
+    .room {
+        &__intro {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
