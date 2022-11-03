@@ -1,10 +1,15 @@
-@forward "util/fonts";
 @forward "util/reset";
+@forward "util/fonts";
 @forward "util/utilities";
-@forward "pages/about";
-@forward "pages/blogs";
-@forward "pages/contacts";
-@forward "./layout/footer";
 
 // Layout
 @forward "layout/navbar";
+@forward "layout/header";
+@forward "./layout/footer";
+
+// Pages
+@forward "pages/about";
+@forward "pages/blogs";
+@forward "pages/rooms";
+@forward "pages/singleRoom";
+@forward "pages/contacts";
