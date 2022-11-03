@@ -84,6 +84,7 @@ main {
     margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-size: cover;
+    position: relative;
 
     .expand {
         visibility: hidden;
@@ -111,9 +112,9 @@ main {
 
     &__content {
         text-align: left;
-        position: relative;
+        position: absolute;
         left: 30px;
-        top: 300px;
+        bottom: 30px;
         width: max-content;
 
         h3 {
@@ -129,6 +130,7 @@ main {
         &--item {
             display: flex;
             align-items: center;
+            width: max-content;
 
             p {
                 padding: 0 15px;
@@ -138,6 +140,7 @@ main {
 
     &__level {
         font-size: 0.8rem;
+        width: max-content;
 
         &--item {
             color: $navFontcolor;
@@ -187,9 +190,6 @@ main {
 
         &__content {
             display: grid;
-            height: 200px;
-
-            top: 10px;
             width: 150px;
 
             h3 {
