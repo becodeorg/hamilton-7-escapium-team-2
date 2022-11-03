@@ -1,13 +1,15 @@
 header {
     text-align: center;
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
-    height: 200px;
     background-size: cover;
 }
 
 .hero {
-    padding: 40px;
-
+    //padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     &__title {
         color: red;
         margin: 15px 0;
@@ -26,8 +28,30 @@ header {
     }
 }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
     header {
         height: 250px;
+    }
+    .hero{
+        height:200px;
+    }
+}
+
+@media(min-width: 769px)and (max-width: 1024px){
+    header{
+        height: 400px;
+    }
+    .hero{
+        height: 350px;
+    }
+}
+
+@media(min-width: 1025px){
+    header{
+        height: 600px;
+    }
+    .hero{
+        height: 550px;
+        gap: 30px
     }
 }

@@ -1,0 +1,30 @@
+@use "../util/utilities" as *;
+
+#singleBlog{
+    background-color: $darkBackground;
+    font-family: $escapiumFontParagraph;
+    .linkTransparent{
+        @include button;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        &-small{
+            @include button;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 50px;
+            &:hover{
+                padding: 11px 21px;
+            }
+        }
+        &:hover{
+            padding: 6px 11px;
+        }
+    }
+    hr{
+        width: 35px;
+        border-top: 4px solid #71717159;
+        color: #71717159;
+        height: 3px;
+    }
+}
