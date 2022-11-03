@@ -12,259 +12,460 @@
 
 <body>
     <header>
-        <!--NAVBAR-->
+        <section class="navbar">
+            <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
+
+            <nav class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="index.html">home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="rooms.html">rooms</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">booking</a></li>
+                        <li class="nav__item"><a class="nav__link" href="blogs.html">blog</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">contacts</a></li>
+
+                    </ul>
+                    <div class="booking__container">
+                        <div class="booking__button nav__item">
+                            <a class="booking__button--link" href="contact.html">Book Now!</a>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass nav__search"></i>
+                        <div class="booking__login nav__item">
+                            <i class=" fa-regular fa-user"></i>
+                            <a class="booking__login--link" href="#">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Booking and Login  -->
+            </nav>
+
+        </section>
         <section class="hero">
-            <h1>rooms<span>.</span></h1>
-            <ul class="breadcrumb">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="rooms.html">ROOMS</a></li>
-                <li><a href="#">GRID 4 COLS</a></li>
+            <h1>rooms<span class="hero__title">.</span></h1>
+            <ul class="hero__breadcrumb">
+                <li class="hero__breadcrumb--item">
+                    <a class="hero__breadcrumb--link" href="index.html">HOME</a>
+                </li>
+                <li class="hero__breadcrumb--item">
+                    <a class="hero__breadcrumb--link" href="rooms.html">ROOMS</a>
+                </li>
+                <li class="hero__breadcrumb--item">
+                    <a class="hero__breadcrumb--link" href="#">GRID 4 COLS</a>
+                </li>
             </ul>
         </section>
     </header>
     <main>
         <section class="level">
-            <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Easy</a></li>
-                <li><a href="#">Normal</a></li>
-                <li><a href="#">Hard</a></li>
-            </ul>
+            <a class="linkTransparent level__all" href="#">All</a>
+            <a class="linkTransparent level__easy" href="#">Easy</a>
+            <a class="linkTransparent level_normal" href="#">Normal</a>
+            <a class="linkTransparent level__hard" href="#">Hard</a>
         </section>
         <section class="rooms">
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Magic Imporium</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--one-->
+            <div class="card one normal">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Magic Imporium</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>The Cure</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>LA 20198</p>
-                </div>
+            <!--two-->
+            <div class="card two hard">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Cure</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Burlesque</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>3-5</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>BH 90210</p>
-                </div>
+            <!--three-->
+            <div class="card three easy">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Burlesque</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-5</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>BH 90210</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Prison Break</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>4-6</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--four-->
+            <div class="card four very_hard">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                        </div>
+                        <h3>Prison Break</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>The Hospital</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--five-->
+            <div class="card five easy">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Hospital</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Abandoned Factory</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>6-8</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>120</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>OKC 2179</p>
-                </div>
+            <!--six-->
+            <div class="card six normal">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Abandoned Factory</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>6-8</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>120</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>OKC 2179</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Bunker 51</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>4-6</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--seven-->
+            <div class="card seven hard">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Bunker 51</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>The Mystical Room</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>LA 20198</p>
-                </div>
+            <!--eight-->
+            <div class="card eight easy">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Mystical Room</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Back To The Future</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>3-4</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--nine-->
+            <div class="card nine normal">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Back To The Future</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-4</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>The Cure</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>LA 20198</p>
-                </div>
+            <!--ten-->
+            <div class="card ten easy">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Cure</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Burlesque</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>3-5</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>BH 90210</p>
-                </div>
+            <!--eleven-->
+            <div class="card eleven very__hard">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                        </div>
+                        <h3>Burlesque</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-5</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>BH 90210</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>Prison Break</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>4-6</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>NY 3031</p>
-                </div>
+            <!--twelve-->
+            <div class="card twelve hard">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Prison Break</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>o
+                </a>
             </div>
             <div class="pages">
                 <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
             </div>
         </section>
     </main>
     <footer>
         <!--Olivia -->
     </footer>
+
+    <script src="resources/js/index.js"></script>
 </body>
 
 </html>

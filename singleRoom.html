@@ -6,37 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1c776a677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/style.css">
     <title>Escapium - Room Description</title>
 </head>
 
 <body>
-    <header>
-        <!--NAVBAR-->
-        <section class="hero">
+    <header class="room">
+        <section class="navbar">
+            <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
+
+            <nav class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="index.html">home</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="rooms.html">rooms</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">booking</a></li>
+                        <li class="nav__item"><a class="nav__link" href="blogs.html">blog</a></li>
+                        <li class="nav__item"><a class="nav__link" href="contact.html">contacts</a></li>
+
+                    </ul>
+                    <div class="booking__container">
+                        <div class="booking__button nav__item">
+                            <a class="booking__button--link" href="contact.html">Book Now!</a>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass nav__search"></i>
+                        <div class="booking__login nav__item">
+                            <i class=" fa-regular fa-user"></i>
+                            <a class="booking__login--link" href="#">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Booking and Login  -->
+            </nav>
+
+        </section>
+        <section class="room__hero">
             <h1>The Cure</h1>
         </section>
     </header>
     <main>
-        <section class="intro">
-            <div class="container">
-                <div class="level">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
+        <section class="room__intro">
+            <div class="room__container">
+                <div class="card__level hard">
+                    <i class="fa-solid fa-lock card__level--red"></i>
+                    <i class="fa-solid fa-lock card__level--red"></i>
+                    <i class="fa-solid fa-lock card__level--red"></i>
+                    <i class="fa-solid fa-lock card__level--red"></i>
+                    <i class="fa-solid fa-lock card__level--item"></i>
                 </div>
                 <p>DIFFICULTY</p>
             </div>
-            <div class="container">
-                <div class="players">
-                    <p>2-3</p>
+            <div class="room__container">
+                <div class="card__info--item players">
                     <i class="fa-solid fa-user-group"></i>
+                    <p>2-3</p>
                 </div>
                 <p>PLAYERS</p>
             </div>
-            <div class="container">
-                <div class="minutes">
+            <div class="room__container">
+                <div class="card__info--item minutes">
                     <i class="fa-regular fa-clock"></i>
                     <p>60</p>
                 </div>
@@ -44,90 +82,111 @@
             </div>
         </section>
         <article class="room__description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates neque fuga et suscipit aliquam! Omnis
-            necessitatibus, illo nihil nulla architecto expedita facere. Ad culpa nobis, corporis asperiores illo
-            assumenda quas.
-            Corrupti, fuga. Sapiente eum hic veritatis saepe repellat nemo reprehenderit consequuntur facere labore quas
-            voluptatum, fugit aspernatur adipisci veniam enim quia magnam provident deserunt debitis. Beatae mollitia
-            dolore qui consectetur.
-            Omnis nesciunt voluptas autem delectus! Neque maiores exercitationem facere quos! Cumque, placeat neque nisi
-            beatae, at molestias rerum sunt debitis repudiandae soluta commodi tempora cupiditate obcaecati nulla vero
-            delectus natus!
-            Similique laboriosam non reiciendis natus hic sapiente. Ipsum, fugiat? Unde rem, pariatur, nulla omnis
-            incidunt fugiat perspiciatis nisi corrupti velit, sequi porro iusto quo quisquam aliquam consectetur quae!
-            Facilis, dolores!
-            Optio fugiat, delectus placeat magni quos qui impedit quidem culpa, libero dolor facere ab eaque est dolore
-            numquam odit corporis at harum totam. Nihil eum quaerat, aut dolor deleniti mollitia.
-            Veniam cumque velit nam consequuntur tempore repellendus eum est nemo minima laborum modi dignissimos
-            mollitia ea hic dolorem, cupiditate nesciunt libero magnam fuga beatae! Similique repudiandae facere ipsam
-            quibusdam sit!
-            Sed molestias autem beatae vel iusto ducimus expedita facilis molestiae soluta commodi veniam, blanditiis
-            asperiores sequi quaerat cum sint voluptate ratione temporibus minima doloremque accusantium unde rem?
-            Adipisci, aspernatur explicabo?
-            Natus reiciendis fuga sed incidunt ullam recusandae maiores facere sapiente laboriosam excepturi sunt magnam
-            deleniti consequuntur vitae nobis neque quam, ratione quae ipsam sint culpa laudantium sit? Architecto,
-            dolorem nesciunt?
-            Fugiat ipsam earum cumque dicta magni? Modi distinctio minus omnis voluptatum, cum, dolorem enim ipsum,
-            soluta molestias cumque tempora quibusdam amet voluptas quam. Iusto laudantium at ratione iste qui pariatur!
-            Architecto, eveniet aperiam, obcaecati ab sed numquam laudantium dolor perferendis omnis pariatur
-            perspiciatis molestias nesciunt aut velit? Perferendis officiis molestias quidem amet eius itaque eligendi
-            cum, dignissimos et porro culpa.
-            Dolor eum adipisci aut numquam cupiditate nemo magnam inventore deleniti, amet, sed qui. Aliquid sequi
-            placeat eum beatae, ipsa minus nihil. Amet quibusdam quae nisi impedit, maxime ab enim eligendi.
-            Dicta maxime pariatur, voluptas repellat at rerum fuga hic eius minus debitis assumenda odio et neque,
-            voluptate, est quia sapiente natus. Veritatis quas provident nulla odit ipsum alias porro voluptas?
-            Accusamus, nam aut consequuntur laboriosam iure quibusdam cumque, eius sed, vel officia dicta maxime
-            voluptas? Nam officia necessitatibus officiis. Consectetur illum perspiciatis accusamus pariatur adipisci
-            dicta, perferendis nobis dolores soluta?
-            Exercitationem autem optio tempore. Repellendus possimus modi aspernatur aliquid placeat minima suscipit,
-            exercitationem quibusdam, quae neque, veniam voluptate officia corrupti nemo debitis laborum eligendi
-            obcaecati quod distinctio provident soluta. Dolorem?
-            Voluptas architecto sapiente consequatur fuga unde tempore eligendi iure, cumque fugiat culpa nisi aliquid
-            totam accusamus optio? Obcaecati, sed molestiae molestias deleniti totam officia nesciunt eveniet illum ab
-            aliquam! Ipsa.
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates neque fuga et suscipit aliquam!
+                Omnis
+                necessitatibus, illo nihil nulla architecto expedita facere. Ad culpa nobis, corporis asperiores illo
+                assumenda quas.
+                Corrupti, fuga. Sapiente eum hic veritatis saepe repellat nemo reprehenderit consequuntur facere labore
+                quas
+                voluptatum, fugit aspernatur adipisci veniam enim quia magnam provident deserunt debitis. Beatae
+                mollitia
+                dolore qui consectetur.
+                Omnis nesciunt voluptas autem delectus! Neque maiores exercitationem facere quos! Cumque, placeat neque
+                nisi
+                beatae, at molestias rerum sunt debitis repudiandae soluta commodi tempora cupiditate obcaecati nulla
+                vero
+                delectus natus!
+            </p>
+            <p>
+                Similique laboriosam non reiciendis natus hic sapiente. Ipsum, fugiat? Unde rem, pariatur, nulla omnis
+                incidunt fugiat perspiciatis nisi corrupti velit, sequi porro iusto quo quisquam aliquam consectetur
+                quae!
+                Facilis, dolores!
+                Optio fugiat, delectus placeat magni quos qui impedit quidem culpa, libero dolor facere ab eaque est
+                dolore
+                numquam odit corporis at harum totam. Nihil eum quaerat, aut dolor deleniti mollitia.
+                Veniam cumque velit nam consequuntur tempore repellendus eum est nemo minima laborum modi dignissimos
+                mollitia ea hic dolorem, cupiditate nesciunt libero magnam fuga beatae! Similique repudiandae facere
+                ipsam
+                quibusdam sit!
+            </p>
+            <p>
+                Sed molestias autem beatae vel iusto ducimus expedita facilis molestiae soluta commodi veniam,
+                blanditiis
+                asperiores sequi quaerat cum sint voluptate ratione temporibus minima doloremque accusantium unde rem?
+                Adipisci, aspernatur explicabo?
+                Natus reiciendis fuga sed incidunt ullam recusandae maiores facere sapiente laboriosam excepturi sunt
+                magnam
+                deleniti consequuntur vitae nobis neque quam, ratione quae ipsam sint culpa laudantium sit? Architecto,
+                dolorem nesciunt?
+            </p>
         </article>
-        <section class="contact">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+18009001248">+ 1 800 900 1248</a>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="email:support@escapium.com">support@escapium.com</a>
-            <i class="fa-brands fa-skype"></i>
-            <a href="#">ESCAPIUM</a>
-            <i class="fa-solid fa-location-dot"></i>
-            <a href="">LA 20198</a>
+        <section class="room__contact">
+            <div class="room__contact--item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+18009001248">+ 1 800 900 1248</a>
+            </div>
+            <div class="room__contact--item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="email:support@escapium.com">support@escapium.com</a>
+            </div>
+            <div class="room__contact--item">
+                <i class="fa-brands fa-skype"></i>
+                <a href="#">ESCAPIUM</a>
+            </div>
+            <div class="room__contact--item">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="">LA 20198</a>
+            </div>
         </section>
-        <a href="contact.html">Booking Now!</a>
+        <a class="linkTransparent" href="contact.html">Booking Now!</a>
         <section class="calendar">
             <h3>Booking Form</h3>
             <div>
                 <!--Calendar for bookings here-->
             </div>
         </section>
-        <section class="rooms">
+        <section class="room_rooms">
             <h3>Other Rooms</h3>
-            <div class="card">
-                <div class="card__lock">
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <h3>The Mystical Room</h3>
-                <div class="card__info">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>LA 20198</p>
-                </div>
+            <div class="card eight easy">
+                <a href="rooms.html">
+                    <div class="expand">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Mystical Room</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
     <footer>
         <!--Olivia -->
     </footer>
+
+    <script src="resources/js/index.js"></script>
 </body>
 
 </html>

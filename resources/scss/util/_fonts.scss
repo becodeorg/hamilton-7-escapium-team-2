@@ -1,12 +1,12 @@
-@use '../util/utilities';
+@use '../util/utilities' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
 
 
 body {
-    font-family: utilities.$escapiumFontParagraph;
-    color: utilities.$whiteBackground;
+    font-family: $escapiumFontParagraph;
+    color: $whiteBackground;
 }
 
 h1,
@@ -15,12 +15,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: utilities.$escapiumFontHeading;
+    font-family: $escapiumFontHeading;
+}
+
+h1 {
+    font-size: 2rem;
+    color: $whiteBackground;
+}
+
+h3 {
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
-    color: utilities.$whiteBackground;
+    color: $navFontcolor;
 }
 
 li {
