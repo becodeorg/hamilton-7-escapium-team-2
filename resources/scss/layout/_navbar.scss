@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 @use '../util/utilities' as *;
-=======
-@use "../util/utilities";
->>>>>>> olivia
 
 // Mobile
 .navbar {
-<<<<<<< HEAD
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%);
     display: flex;
     align-items: center;
@@ -20,22 +15,6 @@
         >img {
             max-height: 50px;
         }
-=======
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.6545211834733893) 0%,
-    rgba(0, 0, 0, 0.7413559173669468) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__logo {
-    max-height: 50px;
-
-    > img {
-      max-height: 50px;
->>>>>>> olivia
     }
   }
 }
@@ -45,79 +24,14 @@
   align-items: center;
   padding: 0 10px;
 
-<<<<<<< HEAD
     &__search {
         padding: 0 20px;
-=======
-  &__search {
-    padding: 20px;
->>>>>>> olivia
 
     &.active {
       display: none;
     }
   }
 
-<<<<<<< HEAD
-    &__menu {
-        z-index: 5;
-        align-items: center;
-        position: fixed;
-        left: -100%;
-        top: 0;
-        transition: 0.3s;
-        width: 70%;
-        height: 100%;
-        background-color: $sidebarBackground;
-
-        &.active {
-            left: 0;
-        }
-    }
-
-    &__item {
-        text-align: left;
-        padding: 0px 30px;
-        margin-left: 2px;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 50px;
-        text-transform: capitalize;
-        border-bottom: 1px solid $navFontcolor;
-
-    }
-
-    &__link {
-        color: $whiteBackground;
-
-    }
-}
-
-.booking {
-    &__button {
-        display: none;
-    }
-
-    &__login {
-        &--link {
-            color: $whiteBackground;
-
-            &:hover {
-                color: $escapiumRed;
-            }
-        }
-    }
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: $whiteBackground;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-=======
   &__menu {
     align-items: center;
     position: fixed;
@@ -157,7 +71,6 @@
   background-color: utilities.$whiteBackground;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
->>>>>>> olivia
 }
 
 .hamburger {
@@ -177,7 +90,6 @@
   }
 }
 
-<<<<<<< HEAD
 
 // Desktop
 @media(min-width:1024px) {
@@ -188,27 +100,9 @@
     .navbar {
         justify-content: space-between;
 
-=======
-@media (min-width: 1024px) {
-  .hamburger {
-    display: none;
-  }
-
-  .navbar {
-    min-width: max-content;
-    justify-content: flex-start;
-
-    &__logo {
-      max-height: 80px;
-
-      > img {
-        max-height: 80px;
-      }
->>>>>>> olivia
     }
   }
 
-<<<<<<< HEAD
     .nav {
         width: 100%;
 
@@ -299,65 +193,3 @@
 
 
 }
-=======
-  .nav {
-    width: 100%;
-
-    &__menu {
-      min-width: 100%;
-      display: flex;
-      align-items: center;
-      position: static;
-      left: 0;
-      top: 0;
-      transition: 0;
-      width: auto;
-      height: auto;
-      background-color: transparent;
-    }
-
-    &__list {
-      display: flex;
-      flex: 70%;
-    }
-
-    &__item {
-      border-bottom: none;
-      align-items: center;
-      font-size: 1.3rem;
-      padding: 0px 20px;
-    }
-
-    &__search {
-      font-size: 1.3rem;
-
-      &::after {
-        content: "|";
-        position: relative;
-        left: 15px;
-        font-size: 1.8rem;
-        color: utilities.$navFontcolor;
-      }
-    }
-  }
-
-  .booking {
-    &__container {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      flex: 30%;
-    }
-
-    &__button {
-      display: block;
-    }
-  }
-
-  .login--link {
-    text-transform: uppercase;
-    font-weight: 200;
-    padding-left: 5px;
-  }
-}
->>>>>>> olivia
