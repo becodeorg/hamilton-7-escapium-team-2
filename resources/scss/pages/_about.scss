@@ -118,7 +118,7 @@ h2 {
     font-weight: 800;
   }
 }
-#hrAbout {
+#EscapeRoomHidden {
   display: none;
 }
 @media only screen and (min-width: 410px) and (max-width: 768px) {
@@ -171,16 +171,42 @@ h2 {
     transform: scaleX(-1);
   }
 
-  #hrAbout {
-    display: block;
-    width: 50%;
-    margin: 30px auto;
-  }
-
   #faqquestions {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-bottom: 30px;
+  }
+
+  #EscapeRoomHidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .faqQuestions {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  #faqquestions {
+    width: 40%;
+    margin: auto;
+  }
+  #EscapeRoomHidden {
+    display: flex;
+    margin: auto;
+
+    #response {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      color: $globalFontColor;
+      font-weight: 400;
+    }
+  }
+
+  #EscapeRoomNotHidden {
+    display: none;
   }
 }
