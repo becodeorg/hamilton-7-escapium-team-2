@@ -18,6 +18,10 @@ h2 {
   text-align: center;
 }
 
+.pPlay {
+  margin-bottom: 40px;
+}
+
 #certificates {
   align-items: center;
 }
@@ -34,6 +38,14 @@ h2 {
   align-items: center;
   background-color: $darkestBackground;
 }
+.peopleSay {
+  margin-bottom: 20px;
+}
+
+#tiffany {
+  font-size: smaller;
+  font-weight: 900;
+}
 
 #FAQ {
   display: flex;
@@ -44,11 +56,15 @@ h2 {
 #h3FAQ {
   color: $darkBackground;
 }
-#faqQuestions {
+.faqQuestions {
   display: flex;
   flex-direction: row;
   color: $darkBackground;
-}
-.fa-thin fa-plus {
-  color: $darkBackground;
+  i {
+    margin-right: 10px;
+    color: $darkBackground;
+  }
+  p {
+    justify-content: center;
+  }
 }

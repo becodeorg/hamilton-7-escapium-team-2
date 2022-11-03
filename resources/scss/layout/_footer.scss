@@ -8,11 +8,13 @@ footer {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  z-index: 0;
   &::after {
     content: "";
     background: url("../images/gallery/room-7.jpg") no-repeat fixed;
+    background-size: cover;
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.2;
     top: 0;
     left: 0;
     right: 0;
@@ -23,9 +25,7 @@ footer {
 #footerNumbersSections {
   width: 100%;
 }
-i {
-  color: white;
-}
+
 .footerNumbers {
   padding-top: 30px;
   display: flex;
@@ -112,6 +112,9 @@ ul.social > li > a {
   background-color: #222222;
   color: #fff;
   margin: 0 3px 3px 0;
+  i {
+    color: white;
+  }
 }
 
 ul.social > li > a:hover {

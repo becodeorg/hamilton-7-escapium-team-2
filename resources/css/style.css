@@ -236,12 +236,14 @@ footer {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  z-index: 0;
 }
 footer::after {
   content: "";
   background: url("../images/gallery/room-7.jpg") no-repeat fixed;
+  background-size: cover;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.2;
   top: 0;
   left: 0;
   right: 0;
@@ -251,10 +253,6 @@ footer::after {
 
 #footerNumbersSections {
   width: 100%;
-}
-
-i {
-  color: white;
 }
 
 .footerNumbers {
@@ -346,6 +344,9 @@ ul.social > li > a {
   color: #fff;
   margin: 0 3px 3px 0;
 }
+ul.social > li > a i {
+  color: white;
+}
 
 ul.social > li > a:hover {
   text-decoration: none;
@@ -418,6 +419,10 @@ h2 {
   text-align: center;
 }
 
+.pPlay {
+  margin-bottom: 40px;
+}
+
 #certificates {
   align-items: center;
 }
@@ -435,6 +440,15 @@ h2 {
   background-color: #1B1B1B;
 }
 
+.peopleSay {
+  margin-bottom: 20px;
+}
+
+#tiffany {
+  font-size: smaller;
+  font-weight: 900;
+}
+
 #FAQ {
   display: flex;
   flex-direction: column;
@@ -446,14 +460,17 @@ h2 {
   color: #222222;
 }
 
-#faqQuestions {
+.faqQuestions {
   display: flex;
   flex-direction: row;
   color: #222222;
 }
-
-.fa-thin fa-plus {
+.faqQuestions i {
+  margin-right: 10px;
   color: #222222;
+}
+.faqQuestions p {
+  justify-content: center;
 }
 
 #blogs {
