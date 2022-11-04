@@ -2,14 +2,6 @@
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
 
-<<<<<<< HEAD
-=======
-main {
-  display: flex;
-  flex-direction: column;
-}
-
->>>>>>> olivia
 #headerAbout {
   text-align: center;
   background: linear-gradient(
@@ -23,34 +15,6 @@ main {
   background-size: cover;
 }
 
-<<<<<<< HEAD
-.hero {
-  //padding: 40px;
-
-  &title {
-    color: red;
-    margin: 15px 0;
-  }
-
-  &breadcrumb {
-    display: flex;
-    flex-direction: rom;
-    align-items: center;
-    justify-content: center;
-
-    &--link {
-      font-size: 0.8rem;
-      padding: 5px;
-    }
-  }
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-=======
->>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;

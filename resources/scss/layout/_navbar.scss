@@ -2,16 +2,11 @@
 // Mobile
 
 .navbar {
-<<<<<<< HEAD
-  background: linear-gradient(0deg, rgba(27, 27, 27, 0.788953081232493) 0%, rgba(27, 27, 27, 0.9514180672268907) 100%);
-=======
   background: linear-gradient(
-    90deg,
-    rgb(0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 74%,
-    rgb(0, 0, 0) 100%
+    0deg,
+    rgba(27, 27, 27, 0.788953081232493) 0%,
+    rgba(27, 27, 27, 0.9514180672268907) 100%
   );
->>>>>>> olivia
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,11 +106,7 @@
 
 // Desktop
 
-<<<<<<< HEAD
-@media(min-width:961px) {
-=======
-@media (min-width: 780px) {
->>>>>>> olivia
+@media (min-width: 961px) {
   .hamburger {
     display: none;
   }
@@ -143,23 +134,19 @@
       display: flex;
       flex: 60%;
     }
-  
 
     &__item {
       position: relative;
       border-bottom: none;
       align-items: center;
       padding: 0px 20px;
-<<<<<<< HEAD
       line-height: 0px;
       z-index: 5;
     }
 
     &__link {
-
       &:hover {
         color: $whiteBackground;
-
 
         &::after {
           z-index: -1;
@@ -177,11 +164,7 @@
           transform: translateY(23px) translateX(4px) rotate(-45deg);
         }
       }
-=======
->>>>>>> olivia
     }
-  
-
 
     /*
             &--redbar {
@@ -206,7 +189,6 @@
       }
     }
   }
-  
 
   .booking {
     &__container {

@@ -40,7 +40,11 @@ li {
 }
 
 .navbar {
-  background: linear-gradient(0deg, rgba(27, 27, 27, 0.7889530812) 0%, rgba(27, 27, 27, 0.9514180672) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 27, 27, 0.7889530812) 0%,
+    rgba(27, 27, 27, 0.9514180672) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +56,7 @@ li {
   max-height: 50px;
 }
 
-.navbar__logo>img {
+.navbar__logo > img {
   max-height: 50px;
 }
 
@@ -195,7 +199,7 @@ li {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: #F60B0E;
+    background-color: #f60b0e;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     transform: translateY(23px) translateX(4px) rotate(-45deg);
@@ -206,7 +210,7 @@ li {
   }
 
   .nav__search:hover {
-    color: #F60B0E;
+    color: #f60b0e;
   }
 
   .nav__search::after {
@@ -243,7 +247,7 @@ li {
   }
 
   .booking__button--link:hover {
-    background-color: #F60B0E;
+    background-color: #f60b0e;
     border: none;
   }
 
@@ -255,13 +259,19 @@ li {
   }
 
   .booking__login--link:hover {
-    color: #F60B0E;
+    color: #f60b0e;
   }
 }
 
 header {
   text-align: center;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 74%,
+      rgb(0, 0, 0) 100%
+    ),
+    url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   background-size: cover;
 }
 
@@ -322,7 +332,7 @@ header {
 
 footer {
   position: relative;
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -359,7 +369,7 @@ footer::after {
   border-style: solid;
   border-width: 1px;
   width: 40px;
-  border-color: #F60B0E;
+  border-color: #f60b0e;
 }
 
 h3 {
@@ -420,11 +430,11 @@ ul.social {
   text-align: center;
 }
 
-ul.social>li {
+ul.social > li {
   display: inline-block;
 }
 
-ul.social>li>a {
+ul.social > li > a {
   display: inline-block;
   font-size: 18px;
   line-height: 30px;
@@ -439,9 +449,9 @@ ul.social > li > a i {
   color: white;
 }
 
-ul.social>li>a:hover {
+ul.social > li > a:hover {
   text-decoration: none;
-  background-color: #F60B0E;
+  background-color: #f60b0e;
 }
 
 #footerEscapiumLogo {
@@ -498,10 +508,14 @@ ul.social>li>a:hover {
     width: 100vw;
   }
 }
-<<<<<<< HEAD
 
 #home header {
-  background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(27, 27, 27, 0.4248293067) 100%), url(../images/gallery/slide-4.jpg) no-repeat center;
+  background: linear-gradient(
+      0deg,
+      rgb(27, 27, 27) 0%,
+      rgba(27, 27, 27, 0.4248293067) 100%
+    ),
+    url(../images/gallery/slide-4.jpg) no-repeat center;
   background-size: cover;
   height: 300px;
 }
@@ -516,11 +530,11 @@ ul.social>li>a:hover {
 }
 
 #home .hero a:hover {
-  color: #F60B0E;
+  color: #f60b0e;
 }
 
 #home main {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 #home main .section__title {
@@ -533,7 +547,7 @@ ul.social>li>a:hover {
 
 #home main .section__title a {
   font-size: 12px;
-  color: #F60B0E;
+  color: #f60b0e;
   text-decoration: underline;
 }
 
@@ -588,7 +602,7 @@ ul.social>li>a:hover {
 }
 
 #home main .card__button--link:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   border: none;
 }
 
@@ -601,11 +615,17 @@ ul.social>li>a:hover {
 }
 
 #home main .testimonials h3 {
-  color: #1B1B1B;
+  color: #1b1b1b;
 }
 
 #home main .target {
-  background: linear-gradient(275deg, rgba(34, 34, 34, 0) 0%, rgb(34, 34, 34) 68%, rgb(34, 34, 34) 100%), url(../images/gallery/slide-3.jpg) no-repeat left;
+  background: linear-gradient(
+      275deg,
+      rgba(34, 34, 34, 0) 0%,
+      rgb(34, 34, 34) 68%,
+      rgb(34, 34, 34) 100%
+    ),
+    url(../images/gallery/slide-3.jpg) no-repeat left;
   background-size: 115%;
 }
 
@@ -622,7 +642,7 @@ ul.social>li>a:hover {
 }
 
 #home main .target__item i {
-  color: #F60B0E;
+  color: #f60b0e;
   font-size: 1.5rem;
   width: 20%;
 }
@@ -632,7 +652,7 @@ ul.social>li>a:hover {
 }
 
 #home main .gallery {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 #home main .contact {
@@ -695,21 +715,18 @@ ul.social>li>a:hover {
 }
 
 header {
-=======
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-#headerAbout {
->>>>>>> olivia
   text-align: center;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 74%,
+      rgb(0, 0, 0) 100%
+    ),
+    url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
 }
 
-<<<<<<< HEAD
 .herotitle {
   color: red;
   margin: 15px 0;
@@ -732,8 +749,6 @@ main {
   flex-direction: column;
 }
 
-=======
->>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -769,7 +784,7 @@ h2 {
 
 #whatPeopleSay {
   align-items: center;
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 .peopleSay {
@@ -777,7 +792,7 @@ h2 {
 }
 .peopleSay a {
   margin-bottom: 20px;
-  color: #F60B0E;
+  color: #f60b0e;
   text-decoration: underline;
 }
 
@@ -903,7 +918,7 @@ h2 {
 }
 @media only screen and (min-width: 768px) {
   .aboutSectionDark {
-    background-color: #1B1B1B;
+    background-color: #1b1b1b;
   }
   #howToPlay {
     display: flex;
@@ -1033,7 +1048,7 @@ h2 {
 }
 
 #blogs .linkTransparent:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   box-shadow: 0px 0px 5px #fefefe;
   border: none;
 }
@@ -1052,7 +1067,7 @@ h2 {
 }
 
 #blogs .linkTransparent-small:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   box-shadow: 0px 0px 5px #fefefe;
   border: none;
 }
@@ -1554,7 +1569,7 @@ main {
 }
 
 .linkTransparent:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   box-shadow: 0px 0px 5px #fefefe;
   border: none;
 }
@@ -1564,41 +1579,95 @@ main {
 }
 
 .one {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/slide-2.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/slide-2.jpg) no-repeat center 10%;
 }
 
 .two,
 .ten {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-2.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-2.jpg) no-repeat center 10%;
 }
 
 .three {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-3.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-3.jpg) no-repeat center 10%;
 }
 
 .four,
 .eleven {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-4.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-4.jpg) no-repeat center 10%;
 }
 
 .five {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-5.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-5.jpg) no-repeat center 10%;
 }
 
 .six {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/gallery-1.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/gallery-1.jpg) no-repeat center 10%;
 }
 
 .seven {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-7.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-7.jpg) no-repeat center 10%;
 }
 
 .eight {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-8.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-8.jpg) no-repeat center 10%;
 }
 
 .nine {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6237088585) 75%, rgba(0, 0, 0, 0.4976584384) 100%), url(../images/gallery/room-9.jpg) no-repeat center 10%;
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6237088585) 75%,
+      rgba(0, 0, 0, 0.4976584384) 100%
+    ),
+    url(../images/gallery/room-9.jpg) no-repeat center 10%;
 }
 
 .four,
@@ -1622,7 +1691,11 @@ main {
 }
 
 .card:hover .expand {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   visibility: visible;
   width: 35px;
   height: 35px;
@@ -1674,7 +1747,7 @@ main {
 }
 
 .card__level--red {
-  color: #F60B0E;
+  color: #f60b0e;
 }
 
 .pages a {
@@ -1689,7 +1762,7 @@ main {
 }
 
 .pages a:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   border: none;
 }
 
@@ -1737,7 +1810,12 @@ main {
 }
 
 .room__header {
-  background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(27, 27, 27, 0.4248293067) 100%), url(../images/gallery/slide-3.jpg) no-repeat center;
+  background: linear-gradient(
+      0deg,
+      rgb(27, 27, 27) 0%,
+      rgba(27, 27, 27, 0.4248293067) 100%
+    ),
+    url(../images/gallery/slide-3.jpg) no-repeat center;
   height: 200px;
   background-size: cover;
 }
@@ -1757,7 +1835,7 @@ main {
 }
 
 .room__main {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 .room__details {
@@ -1779,7 +1857,7 @@ main {
   max-width: 300px;
 }
 
-.room__container>p {
+.room__container > p {
   font-size: 12px;
   color: #fefefe;
   font-weight: 500;
@@ -1809,10 +1887,10 @@ main {
 }
 
 .room__contact--item a:hover {
-  color: #F60B0E;
+  color: #f60b0e;
 }
 
-.room__contact--item:last-child>a {
+.room__contact--item:last-child > a {
   color: #777;
 }
 
@@ -1834,7 +1912,7 @@ main {
 }
 
 .room__linkTransparent:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   border: none;
 }
 
@@ -1872,7 +1950,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   border: none;
 }
 
@@ -1941,10 +2019,12 @@ main {
 
 #headerContacts {
   text-align: center;
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       rgb(0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 74%,
-      rgb(0, 0, 0) 100%),
+      rgb(0, 0, 0) 100%
+    ),
     url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
@@ -1967,7 +2047,6 @@ main {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 #singleBlog {
   background-color: #222222;
   font-family: "Hind";
@@ -1987,7 +2066,7 @@ main {
 }
 
 #singleBlog .linkTransparent:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   box-shadow: 0px 0px 5px #fefefe;
   border: none;
 }
@@ -2006,7 +2085,7 @@ main {
 }
 
 #singleBlog .linkTransparent-small:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
   box-shadow: 0px 0px 5px #fefefe;
   border: none;
 }
@@ -2044,7 +2123,7 @@ main {
   text-align: center;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   background-color: #222222;
   color: #222222;
 }
@@ -2121,7 +2200,6 @@ input[type=checkbox] {
     margin: 0 0 50px 0;
   }
 }
-=======
 #getInTouchHeader {
   margin-bottom: 30px;
 }
@@ -2168,7 +2246,7 @@ input[type=checkbox] {
   font-weight: 600;
 }
 #contactsSendMessage:hover {
-  background-color: #F60B0E;
+  background-color: #f60b0e;
 }
 
 #mapTest {
@@ -2217,4 +2295,3 @@ input[type=checkbox] {
   margin-top: 50px;
   margin-bottom: 50px;
 }
->>>>>>> olivia
