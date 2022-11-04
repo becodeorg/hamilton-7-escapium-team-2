@@ -470,6 +470,10 @@ h2 {
   font-weight: 900;
 }
 
+.commentPhoto {
+  width: 25%;
+}
+
 #arrows {
   display: none;
   flex-direction: row;
@@ -546,6 +550,9 @@ h2 {
     flex-direction: row;
     gap: 20px;
   }
+  .commentPhoto {
+    width: 25%;
+  }
   #commentAaron {
     display: block;
   }
@@ -572,10 +579,78 @@ h2 {
   }
 }
 @media only screen and (min-width: 768px) {
+  .aboutSectionDark {
+    background-color: #1B1B1B;
+  }
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .pPlay {
+    width: 50%;
+  }
+  #video {
+    width: 90%;
+  }
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .certificates {
+    width: 10%;
+  }
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #commentAaron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #commentTiffany {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .peopleSayComment {
+    width: 40%;
+  }
+  .commentPhoto {
+    width: 10%;
+  }
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #slash {
+    transform: scaleX(-1);
+  }
+  #FAQheader {
+    margin-bottom: 20px;
+  }
   .faqQuestions {
     display: flex;
     flex-direction: row;
     margin: auto;
+    margin-bottom: 30px;
   }
   #faqquestions {
     width: 40%;
@@ -588,7 +663,6 @@ h2 {
   #EscapeRoomHidden #response {
     display: flex;
     flex-direction: column;
-    margin: auto;
     color: #717171;
     font-weight: 400;
   }
