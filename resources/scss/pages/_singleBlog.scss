@@ -28,3 +28,120 @@
         height: 3px;
     }
 }
+.singleBlogs_flexBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleBlog_figure{
+    overflow: hidden;
+    &-picture{
+        background-image: url(../images/gallery/gallery-1.jpg);
+        background-repeat: no-repeat;
+        //width: 100%;
+    }
+    figcaption{
+        text-align: center;
+    }
+}
+
+// .escapiumCheckbox{
+//     -webkit-appearance: none;
+// 	background-color: $darkBackground;
+// 	border: 1px solid #cacece;
+// 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+// 	padding: 9px;
+// 	border-radius: 3px;
+// 	display: inline-block;
+// 	position: relative;
+//     &:checked{
+//         background-color: #e9ecee;
+//         border: 1px solid #adb8c0;
+//         box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+//         color: #99a1a7;
+//     }
+// }
+
+input[type=checkbox]{
+    background-color: $darkBackground;
+    color: $darkBackground;
+}
+
+.escapiumSubmitBtn{
+    background-color: $darkBackground;
+    padding: 10px 30px;
+}
+
+.escapium_form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    input{
+        background-color: $darkBackground;
+        color: $globalFontColor;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: $globalFontColor;
+        height: fit-content;
+    }
+    textarea{
+        color: $globalFontColor;
+        background-color: $darkBackground;
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: $globalFontColor;
+        grid-column: span 2;
+    }
+    div{
+        grid-column: span 2;
+    }
+    label{
+        background-color: $darkBackground;
+        color: $globalFontColor;
+    }
+}
+
+@media (max-width: 767px){
+   .escapium_form{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 20px;
+    gap: 10px;
+    textarea{
+        grid-column: span 1;
+    }
+    div{
+        grid-column: span 1;
+    }
+   }
+}
+
+@media(min-width: 768px)and (max-width: 1024px){
+
+}
+
+@media(min-width: 1025px){
+    .singleBlog_figure{
+        
+        &-picture{
+            height: 320px;
+            background-position: -50px;
+            background-size: 109%;
+        }
+    }
+
+
+
+    .singleBlog_leaveComment{
+        h2{
+            margin-bottom: 10px;
+        }
+        hr{
+            margin : 0 0 50px 0;
+        }
+    }
+
+    
+}

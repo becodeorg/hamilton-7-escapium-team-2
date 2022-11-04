@@ -1216,3 +1216,88 @@ header {
   color: rgba(113, 113, 113, 0.3490196078);
   height: 3px;
 }
+
+.singleBlogs_flexBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleBlog_figure {
+  overflow: hidden;
+}
+.singleBlog_figure-picture {
+  background-image: url(../images/gallery/gallery-1.jpg);
+  background-repeat: no-repeat;
+}
+.singleBlog_figure figcaption {
+  text-align: center;
+}
+
+input[type=checkbox] {
+  background-color: #222222;
+  color: #222222;
+}
+
+.escapiumSubmitBtn {
+  background-color: #222222;
+  padding: 10px 30px;
+}
+
+.escapium_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.escapium_form input {
+  background-color: #222222;
+  color: #717171;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #717171;
+  height: fit-content;
+}
+.escapium_form textarea {
+  color: #717171;
+  background-color: #222222;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #717171;
+  grid-column: span 2;
+}
+.escapium_form div {
+  grid-column: span 2;
+}
+.escapium_form label {
+  background-color: #222222;
+  color: #717171;
+}
+
+@media (max-width: 767px) {
+  .escapium_form {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .escapium_form textarea {
+    grid-column: span 1;
+  }
+  .escapium_form div {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 1025px) {
+  .singleBlog_figure-picture {
+    height: 320px;
+    background-position: -50px;
+    background-size: 109%;
+  }
+  .singleBlog_leaveComment h2 {
+    margin-bottom: 10px;
+  }
+  .singleBlog_leaveComment hr {
+    margin: 0 0 50px 0;
+  }
+}
