@@ -498,7 +498,6 @@ ul.social>li>a:hover {
     width: 100vw;
   }
 }
-<<<<<<< HEAD
 
 #home header {
   background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(27, 27, 27, 0.4248293067) 100%), url(../images/gallery/slide-4.jpg) no-repeat center;
@@ -695,45 +694,12 @@ ul.social>li>a:hover {
 }
 
 header {
-=======
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-#headerAbout {
->>>>>>> olivia
   text-align: center;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
 }
 
-<<<<<<< HEAD
-.herotitle {
-  color: red;
-  margin: 15px 0;
-}
-
-.herobreadcrumb {
-  display: flex;
-  flex-direction: rom;
-  align-items: center;
-  justify-content: center;
-}
-
-.herobreadcrumb--link {
-  font-size: 0.8rem;
-  padding: 5px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-=======
->>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1967,7 +1933,6 @@ main {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 #singleBlog {
   background-color: #222222;
   font-family: "Hind";
@@ -2121,7 +2086,6 @@ input[type=checkbox] {
     margin: 0 0 50px 0;
   }
 }
-=======
 #getInTouchHeader {
   margin-bottom: 30px;
 }
@@ -2217,4 +2181,3 @@ input[type=checkbox] {
   margin-top: 50px;
   margin-bottom: 50px;
 }
->>>>>>> olivia
