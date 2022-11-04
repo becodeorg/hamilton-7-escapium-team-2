@@ -2,16 +2,7 @@
 // Mobile
 
 .navbar {
-<<<<<<< HEAD
   background: linear-gradient(0deg, rgba(27, 27, 27, 0.788953081232493) 0%, rgba(27, 27, 27, 0.9514180672268907) 100%);
-=======
-  background: linear-gradient(
-    90deg,
-    rgb(0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 74%,
-    rgb(0, 0, 0) 100%
-  );
->>>>>>> olivia
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +12,7 @@
   &__logo {
     max-height: 50px;
 
-    > img {
+    >img {
       max-height: 50px;
     }
   }
@@ -111,11 +102,7 @@
 
 // Desktop
 
-<<<<<<< HEAD
 @media(min-width:961px) {
-=======
-@media (min-width: 780px) {
->>>>>>> olivia
   .hamburger {
     display: none;
   }
@@ -143,14 +130,13 @@
       display: flex;
       flex: 60%;
     }
-  
+
 
     &__item {
       position: relative;
       border-bottom: none;
       align-items: center;
       padding: 0px 20px;
-<<<<<<< HEAD
       line-height: 0px;
       z-index: 5;
     }
@@ -177,10 +163,8 @@
           transform: translateY(23px) translateX(4px) rotate(-45deg);
         }
       }
-=======
->>>>>>> olivia
     }
-  
+
 
 
     /*
@@ -206,7 +190,7 @@
       }
     }
   }
-  
+
 
   .booking {
     &__container {
