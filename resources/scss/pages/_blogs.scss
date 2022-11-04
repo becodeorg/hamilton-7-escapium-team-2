@@ -157,8 +157,8 @@
     .blogs_card {
         width: 380px;
         box-shadow: 0px 0px 50px black;
-        height: 650px;
-
+        //height: 650px;
+        height: auto;
         &-image {
             img {
                 width: 100%;
@@ -268,14 +268,15 @@
     .blogs_card{
         
         box-shadow: 0px 0px 50px black;
-        height: 650px;
+        //height: 650px;
+        height: auto;
         width: 455px;
         
         &-image{
             img{
                 width: 100%;
                 height: auto;
-                max-height: 200px;
+                //max-height: 200px;
             }
         }
         &-content{
