@@ -27,6 +27,17 @@
         color: #71717159;
         height: 3px;
     }
+    .hero__breadcrumb{
+        li{
+            padding: 0px 20px;
+        }
+    }
+    .blogs_bigContainer-firstChild{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
 .singleBlogs_flexBox{
     display: flex;
@@ -43,28 +54,6 @@
     figcaption{
         text-align: center;
     }
-}
-
-// .escapiumCheckbox{
-//     -webkit-appearance: none;
-// 	background-color: $darkBackground;
-// 	border: 1px solid #cacece;
-// 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-// 	padding: 9px;
-// 	border-radius: 3px;
-// 	display: inline-block;
-// 	position: relative;
-//     &:checked{
-//         background-color: #e9ecee;
-//         border: 1px solid #adb8c0;
-//         box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-//         color: #99a1a7;
-//     }
-// }
-
-input[type=checkbox]{
-    background-color: $darkBackground;
-    color: $darkBackground;
 }
 
 .escapiumSubmitBtn{
@@ -105,6 +94,18 @@ input[type=checkbox]{
 }
 
 @media (max-width: 767px){
+    #singleBlog{
+        .blogs_bigContainer-firstChild{
+            padding-top: 40px;
+        }
+    }
+    .singleBlog_figure{
+        &-picture{
+            height: 320px;
+            background-position: -50px;
+            background-size: 109%;
+        }
+    }
    .escapium_form{
     grid-template-columns: repeat(1, 1fr);
     padding: 10px 20px;
@@ -119,12 +120,17 @@ input[type=checkbox]{
 }
 
 @media(min-width: 768px)and (max-width: 1024px){
-
+    .singleBlog_figure{
+        &-picture{
+            height: 320px;
+            background-position: -50px;
+            background-size: 109%;
+        }
+    }
 }
 
 @media(min-width: 1025px){
     .singleBlog_figure{
-        
         &-picture{
             height: 320px;
             background-position: -50px;
