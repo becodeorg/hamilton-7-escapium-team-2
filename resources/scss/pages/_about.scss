@@ -7,10 +7,16 @@
   background: linear-gradient(90deg,
       rgb(0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 74%,
+<<<<<<< HEAD
       rgb(0, 0, 0) 100%),
     url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
+=======
+      rgb(0, 0, 0) 100%
+    ),
+    url(../images/gallery/slide-1.jpg) no-repeat center -50px;
+>>>>>>> olivia
 }
 
 h2 {
@@ -129,6 +135,17 @@ h2 {
 }
 
 @media only screen and (min-width: 410px) and (max-width: 768px) {
+  #headerAbout {
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 74%,
+        rgb(0, 0, 0) 100%
+      ),
+      url(../images/gallery/slide-1.jpg) no-repeat center -50px;
+  }
+
   #howToPlay {
     display: flex;
     flex-direction: row;
@@ -200,6 +217,94 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
+  #headerAbout {
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 74%,
+        rgb(0, 0, 0) 100%
+      ),
+      url(../images/gallery/slide-1.jpg) no-repeat center -50px;
+  }
+
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #video {
+    width: 80%;
+  }
+
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .certificates {
+    width: 40%;
+  }
+
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .commentPhoto {
+    width: 25%;
+  }
+  #commentAaron {
+    display: block;
+  }
+
+  #commentTiffany {
+    display: block;
+  }
+
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    a {
+      color: white;
+    }
+  }
+
+  #slash {
+    transform: scaleX(-1);
+  }
+
+  #faqquestions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #EscapeRoomHidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #headerAbout {
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 74%,
+        rgb(0, 0, 0) 100%
+      ),
+      url(../images/gallery/slide-1.jpg) no-repeat center -50px;
+  }
   .aboutSectionDark {
     background-color: $darkestBackground;
   }
