@@ -14,41 +14,45 @@
     <script src="./resources/js/index.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="headerContacts">
       <section class="navbar">
-        <a class="navbarlogo" href="index.html"
+        <a class="navbar__logo" href="index.html"
           ><img src="resources/images/logo/logo.png" alt="Escapium Logo"
         /></a>
 
         <nav class="nav">
-          <div class="navmenu">
-            <ul class="navlist">
-              <li class="navitem">
-                <a class="navlink" href="index.html">home</a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">home</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="about.html">about</a>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">about</a>
               </li>
-              <li class="navitem"><a class="navlink" href="#">features</a></li>
-              <li class="navitem">
-                <a class="navlink" href="rooms.html">rooms</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">features</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="contact.html">booking</a>
+              <li class="nav__item">
+                <a class="nav__link" href="rooms.html">rooms</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="blogs.html">blog</a>
+              <li class="nav__item">
+                <a class="nav__link" href="contact.html">booking</a>
               </li>
-              <li class="navitem">
-                <a class="navlink" href="contact.html">contacts</a>
+              <li class="nav__item">
+                <a class="nav__link" href="blogs.html">blog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contact.html">contacts</a>
               </li>
             </ul>
-            <div class="bookingcontainer">
-              <div class="bookingbutton navitem">
-                <a class="bookingbutton--link" href="contact.html">Book Now!</a>
+            <div class="booking__container">
+              <div class="booking__button nav__item">
+                <a class="booking__button--link" href="contact.html"
+                  >Book Now!</a
+                >
               </div>
-              <i class="fa-solid fa-magnifying-glass navsearch"></i>
-              <div class="bookinglogin navitem">
+              <i class="fa-solid fa-magnifying-glass nav__search"></i>
+              <div class="booking__login nav__item">
                 <i class="fa-regular fa-user"></i>
                 <a class="booking__login--link" href="#">Sign in</a>
               </div>
@@ -65,35 +69,36 @@
         </nav>
       </section>
       <section class="hero">
-        <ul class="herobreadcrumb">
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="index.html">HOME</a>
+        <h1>contacts<span class="hero__title">.</span></h1>
+        <ul class="hero__breadcrumb">
+          <li class="hero__breadcrumb--item">
+            <a class="hero__breadcrumb--link" href="index.html"
+              ><span>ESCAPIUM</span></a
+            >
           </li>
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="rooms.html">ROOMS</a>
-          </li>
-          <li class="herobreadcrumb--item">
-            <a class="herobreadcrumb--link" href="#">GRID 4 COLS</a>
+          <li>></li>
+          <li class="hero__breadcrumb--item">
+            <a class="hero__breadcrumb--link" href="about.html">CONTACTS</a>
           </li>
         </ul>
       </section>
     </header>
     <main>
       <section id="getInTouch">
-        <div>
+        <div id="getInTouchHeader">
           <h2>Get in Touch</h2>
           <p>If your interested in working with us, please get in touch</p>
         </div>
-        <div>
-          <div>
+        <div id="escapiumInfos">
+          <div class="escapiumInfos">
             <i class="fa-regular fa-map"></i>
             <p>2390 RoadHill St., Suite 100 <br />North Downtown, NY 82153</p>
           </div>
-          <div>
-            <i class="fa-regular fa-phone"></i>
+          <div class="escapiumInfos">
+            <i class="fa-solid fa-phone"></i>
             <p>+1800 900 1248</p>
           </div>
-          <div>
+          <div class="escapiumInfos">
             <i class="fa-regular fa-envelope"></i>
             <p><span>info@escapium.com</span></p>
           </div>

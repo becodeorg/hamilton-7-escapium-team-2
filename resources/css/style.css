@@ -565,6 +565,9 @@ h2 {
     flex-direction: row;
     gap: 20px;
   }
+  #arrows a {
+    color: white;
+  }
   #slash {
     transform: scaleX(-1);
   }
@@ -640,6 +643,9 @@ h2 {
     flex-direction: row;
     gap: 20px;
   }
+  #arrows li a {
+    color: white;
+  }
   #slash {
     transform: scaleX(-1);
   }
@@ -662,9 +668,13 @@ h2 {
   }
   #EscapeRoomHidden #response {
     display: flex;
-    flex-direction: column;
+    text-align: justify;
     color: #717171;
     font-weight: 400;
+  }
+  #questionResponse {
+    display: flex;
+    flex-direction: column;
   }
   #EscapeRoomNotHidden {
     display: none;
@@ -1052,7 +1062,7 @@ main {
   align-items: center;
 }
 
-header {
+#headerContacts {
   text-align: center;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
@@ -1075,4 +1085,27 @@ header {
 .herobreadcrumb--link {
   font-size: 0.8rem;
   padding: 5px;
+}
+
+#getInTouchHeader {
+  margin-bottom: 30px;
+}
+#getInTouchHeader h2 {
+  margin-bottom: 10px;
+}
+
+#escapiumInfos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#escapiumInfos i {
+  font-size: 30px;
+  color: white;
+  margin-right: 15px;
+}
+
+.escapiumInfos {
+  display: flex;
+  flex-direction: row;
 }

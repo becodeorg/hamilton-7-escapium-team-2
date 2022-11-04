@@ -2,7 +2,7 @@
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
 
-header {
+#headerContacts {
   text-align: center;
   background: linear-gradient(
       90deg,
@@ -34,4 +34,27 @@ header {
       padding: 5px;
     }
   }
+}
+
+#getInTouchHeader {
+  margin-bottom: 30px;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+#escapiumInfos {
+  display: flex;
+  flex-direction: column;
+  i {
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+  }
+  row-gap: 20px;
+}
+
+.escapiumInfos {
+  display: flex;
+  flex-direction: row;
 }
