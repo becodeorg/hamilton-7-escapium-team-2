@@ -25,5 +25,7 @@ $navBarColor: #cbcbcb;
 
     &:hover {
         background-color: $escapiumRed;
+        box-shadow: 0px 0px 5px $whiteBackground;
+        border: none;
     }
 }

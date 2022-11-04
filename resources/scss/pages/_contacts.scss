@@ -1,7 +1,7 @@
 @use "../util/fonts" as *;
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
-
+/*
 header {
   text-align: center;
   background: linear-gradient(
@@ -14,9 +14,9 @@ header {
   height: 200px;
   background-size: cover;
 }
-
+*/
 .hero {
-  padding: 40px;
+  //padding: 40px;
 
   &title {
     color: red;

@@ -2,7 +2,7 @@
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
 
-header {
+#headerAbout {
   text-align: center;
   background: linear-gradient(
       90deg,
@@ -16,7 +16,7 @@ header {
 }
 
 .hero {
-  padding: 40px;
+  //padding: 40px;
 
   &title {
     color: red;
