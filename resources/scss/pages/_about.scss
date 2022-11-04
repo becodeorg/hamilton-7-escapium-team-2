@@ -2,59 +2,22 @@
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
 
-<<<<<<< HEAD
-=======
-main {
-  display: flex;
-  flex-direction: column;
-}
-
->>>>>>> olivia
 #headerAbout {
   text-align: center;
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgb(0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 74%,
-      rgb(0, 0, 0) 100%
-    ),
+      rgb(0, 0, 0) 100%),
     url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
 }
 
-<<<<<<< HEAD
-.hero {
-  //padding: 40px;
-
-  &title {
-    color: red;
-    margin: 15px 0;
-  }
-
-  &breadcrumb {
-    display: flex;
-    flex-direction: rom;
-    align-items: center;
-    justify-content: center;
-
-    &--link {
-      font-size: 0.8rem;
-      padding: 5px;
-    }
-  }
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-=======
->>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .aboutCenterSections {
   background-color: $darkBackground;
   display: flex;
@@ -87,24 +50,30 @@ h2 {
   align-items: center;
   background-color: $darkestBackground;
 }
+
 .peopleSay {
   margin-bottom: 20px;
+
   a {
     margin-bottom: 20px;
     color: $escapiumRed;
     text-decoration: underline;
   }
 }
+
 #commentAaron {
   display: none;
 }
+
 .commentName {
   font-size: smaller;
   font-weight: 900;
 }
+
 .commentPhoto {
   width: 25%;
 }
+
 #arrows {
   display: none;
   flex-direction: row;
@@ -116,6 +85,7 @@ h2 {
   color: $darkBackground;
   background-color: white;
 }
+
 #h3FAQ {
   text-align: center;
   color: $darkBackground;
@@ -127,12 +97,14 @@ h2 {
     color: $navFontcolor;
   }
 }
+
 .faqQuestions {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   margin-bottom: 10px;
   color: $darkBackground;
+
   i {
     text-align: center;
     margin-right: 30px;
@@ -151,9 +123,11 @@ h2 {
     font-weight: 800;
   }
 }
+
 #EscapeRoomHidden {
   display: none;
 }
+
 @media only screen and (min-width: 410px) and (max-width: 768px) {
   #howToPlay {
     display: flex;
@@ -170,6 +144,7 @@ h2 {
     flex-direction: row;
     gap: 10px;
   }
+
   .certificates {
     width: 40%;
   }
@@ -184,9 +159,11 @@ h2 {
     flex-direction: row;
     gap: 20px;
   }
+
   .commentPhoto {
     width: 25%;
   }
+
   #commentAaron {
     display: block;
   }
@@ -200,6 +177,7 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 20px;
+
     a {
       color: white;
     }
@@ -238,6 +216,7 @@ h2 {
     align-items: center;
     margin-bottom: 50px;
   }
+
   .pPlay {
     width: 50%;
   }
@@ -252,6 +231,7 @@ h2 {
     justify-content: center;
     gap: 10px;
   }
+
   .certificates {
     width: 10%;
   }
@@ -283,14 +263,17 @@ h2 {
   .peopleSayComment {
     width: 40%;
   }
+
   .commentPhoto {
     width: 10%;
   }
+
   #arrows {
     color: white;
     display: flex;
     flex-direction: row;
     gap: 20px;
+
     li a {
       color: white;
     }
@@ -303,16 +286,19 @@ h2 {
   #FAQheader {
     margin-bottom: 20px;
   }
+
   .faqQuestions {
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-bottom: 30px;
   }
+
   #faqquestions {
     width: 40%;
     margin: auto;
   }
+
   #EscapeRoomHidden {
     display: flex;
 
@@ -325,10 +311,12 @@ h2 {
       font-weight: 400;
     }
   }
+
   #questionResponse {
     display: flex;
     flex-direction: column;
   }
+
   #EscapeRoomNotHidden {
     display: none;
   }

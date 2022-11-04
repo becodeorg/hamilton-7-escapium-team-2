@@ -435,7 +435,8 @@ ul.social>li>a {
   color: #fff;
   margin: 0 3px 3px 0;
 }
-ul.social > li > a i {
+
+ul.social>li>a i {
   color: white;
 }
 
@@ -498,7 +499,6 @@ ul.social>li>a:hover {
     width: 100vw;
   }
 }
-<<<<<<< HEAD
 
 #home header {
   background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(27, 27, 27, 0.4248293067) 100%), url(../images/gallery/slide-4.jpg) no-repeat center;
@@ -695,45 +695,12 @@ ul.social>li>a:hover {
 }
 
 header {
-=======
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-#headerAbout {
->>>>>>> olivia
   text-align: center;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
 }
 
-<<<<<<< HEAD
-.herotitle {
-  color: red;
-  margin: 15px 0;
-}
-
-.herobreadcrumb {
-  display: flex;
-  flex-direction: rom;
-  align-items: center;
-  justify-content: center;
-}
-
-.herobreadcrumb--link {
-  font-size: 0.8rem;
-  padding: 5px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-=======
->>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -775,6 +742,7 @@ h2 {
 .peopleSay {
   margin-bottom: 20px;
 }
+
 .peopleSay a {
   margin-bottom: 20px;
   color: #F60B0E;
@@ -823,6 +791,7 @@ h2 {
   margin-bottom: 10px;
   color: #222222;
 }
+
 .faqQuestions i {
   text-align: center;
   margin-right: 30px;
@@ -835,6 +804,7 @@ h2 {
   border-radius: 36px;
   background-color: #f6f6f6;
 }
+
 .faqQuestions p {
   color: #222222;
   font-weight: 800;
@@ -850,156 +820,193 @@ h2 {
     flex-direction: row;
     gap: 20px;
   }
+
   #video {
     width: 80%;
   }
+
   #certificates {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+
   .certificates {
     width: 40%;
   }
+
   #ourTeam {
     display: flex;
     flex-direction: row;
   }
+
   #testimonials {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   .commentPhoto {
     width: 25%;
   }
+
   #commentAaron {
     display: block;
   }
+
   #commentTiffany {
     display: block;
   }
+
   #arrows {
     color: white;
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   #arrows a {
     color: white;
   }
+
   #slash {
     transform: scaleX(-1);
   }
+
   #faqquestions {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-bottom: 30px;
   }
+
   #EscapeRoomHidden {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .aboutSectionDark {
     background-color: #1B1B1B;
   }
+
   #howToPlay {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   .play {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
   }
+
   .pPlay {
     width: 50%;
   }
+
   #video {
     width: 90%;
   }
+
   #certificates {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
   }
+
   .certificates {
     width: 10%;
   }
+
   #ourTeam {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
   #testimonials {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   #commentAaron {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   #commentTiffany {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .peopleSayComment {
     width: 40%;
   }
+
   .commentPhoto {
     width: 10%;
   }
+
   #arrows {
     color: white;
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   #arrows li a {
     color: white;
   }
+
   #slash {
     transform: scaleX(-1);
   }
+
   #FAQheader {
     margin-bottom: 20px;
   }
+
   .faqQuestions {
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-bottom: 30px;
   }
+
   #faqquestions {
     width: 40%;
     margin: auto;
   }
+
   #EscapeRoomHidden {
     display: flex;
     margin: auto;
   }
+
   #EscapeRoomHidden #response {
     display: flex;
     text-align: justify;
     color: #717171;
     font-weight: 400;
   }
+
   #questionResponse {
     display: flex;
     flex-direction: column;
   }
+
   #EscapeRoomNotHidden {
     display: none;
   }
 }
+
 #blogs {
   background-color: #222222;
   font-family: "Hind";
@@ -1967,7 +1974,6 @@ main {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 #singleBlog {
   background-color: #222222;
   font-family: "Hind";
@@ -2121,10 +2127,11 @@ input[type=checkbox] {
     margin: 0 0 50px 0;
   }
 }
-=======
+
 #getInTouchHeader {
   margin-bottom: 30px;
 }
+
 #getInTouchHeader h2 {
   margin-bottom: 10px;
 }
@@ -2134,6 +2141,7 @@ input[type=checkbox] {
   flex-direction: column;
   row-gap: 20px;
 }
+
 #escapiumInfos i {
   font-size: 30px;
   color: white;
@@ -2150,6 +2158,7 @@ input[type=checkbox] {
   flex-direction: column;
   align-items: center;
 }
+
 #contactForm h2 {
   margin-bottom: 20px;
 }
@@ -2167,6 +2176,7 @@ input[type=checkbox] {
   color: #fefefe;
   font-weight: 600;
 }
+
 #contactsSendMessage:hover {
   background-color: #F60B0E;
 }
@@ -2183,11 +2193,13 @@ input[type=checkbox] {
   #getInTouch {
     width: 30%;
   }
+
   #ContactsInfosForm {
     display: flex;
     flex-direction: row;
   }
 }
+
 #contactForm {
   width: 60%;
 }
@@ -2196,6 +2208,7 @@ input[type=checkbox] {
   #getInTouch {
     width: 30%;
   }
+
   #ContactsInfosForm {
     margin: auto;
     display: flex;
@@ -2203,6 +2216,7 @@ input[type=checkbox] {
     gap: 40px;
   }
 }
+
 #contactForm {
   width: 60%;
 }
@@ -2217,4 +2231,3 @@ input[type=checkbox] {
   margin-top: 50px;
   margin-bottom: 50px;
 }
->>>>>>> olivia
