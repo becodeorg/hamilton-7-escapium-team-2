@@ -567,7 +567,6 @@ ul.social > li > a:hover {
 }
 #home main .testimonials h3 {
   color: #1B1B1B;
-<<<<<<< HEAD
 }
 #home main .testimonials p {
   color: #717171;
@@ -586,12 +585,6 @@ ul.social > li > a:hover {
 #home main .target {
   background: linear-gradient(275deg, rgba(34, 34, 34, 0) 0%, rgb(34, 34, 34) 68%, rgb(34, 34, 34) 100%), url(../images/gallery/slide-3.jpg) no-repeat left;
   background-size: cover;
-=======
-}
-#home main .target {
-  background: linear-gradient(275deg, rgba(34, 34, 34, 0) 0%, rgb(34, 34, 34) 68%, rgb(34, 34, 34) 100%), url(../images/gallery/slide-3.jpg) no-repeat left;
-  background-size: 115%;
->>>>>>> olivia
 }
 #home main .target__item {
   display: flex;
@@ -665,13 +658,7 @@ ul.social > li > a:hover {
 }
 #headerAbout {
   text-align: center;
-<<<<<<< HEAD
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
-  height: 200px;
-  background-size: cover;
-=======
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center -50px;
->>>>>>> olivia
 }
 
 h2 {
@@ -1822,13 +1809,7 @@ main {
 }
 #headerContacts {
   text-align: center;
-<<<<<<< HEAD
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
-  height: 200px;
-  background-size: cover;
-=======
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center;
->>>>>>> olivia
 }
 
 #getInTouchHeader {
@@ -1836,13 +1817,6 @@ main {
 }
 #getInTouchHeader h2 {
   margin-bottom: 10px;
-<<<<<<< HEAD
-}
-
-#escapiumInfos {
-  display: flex;
-  flex-direction: column;
-=======
 }
 #getInTouchHeader p {
   color: #717171;
@@ -1865,7 +1839,6 @@ main {
   display: flex;
   flex-direction: column;
   color: #717171;
->>>>>>> olivia
   row-gap: 20px;
 }
 #escapiumInfos i {
@@ -1883,10 +1856,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-=======
   margin-left: 60px;
->>>>>>> olivia
 }
 #contactForm h2 {
   margin-bottom: 20px;
@@ -1920,10 +1890,6 @@ main {
 }
 
 @media only screen and (min-width: 410px) and (max-width: 768px) {
-<<<<<<< HEAD
-  #getInTouch {
-    width: 30%;
-=======
   #headerContacts {
     text-align: center;
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center -50px;
@@ -1939,21 +1905,12 @@ main {
   }
   #getInTouch {
     margin-left: 30px;
->>>>>>> olivia
   }
   #ContactsInfosForm {
     display: flex;
     flex-direction: row;
   }
 }
-<<<<<<< HEAD
-#contactForm {
-  width: 60%;
-}
-
-@media only screen and (min-width: 768px) {
-  #getInTouch {
-=======
 @media only screen and (min-width: 768px) {
   #headerContacts {
     text-align: center;
@@ -1992,7 +1949,6 @@ main {
   }
   #getInTouch {
     margin-left: 200px;
->>>>>>> olivia
     width: 30%;
   }
   #ContactsInfosForm {
@@ -2093,14 +2049,6 @@ main {
   text-align: center;
 }
 
-<<<<<<< HEAD
-=======
-input[type=checkbox] {
-  background-color: #222222;
-  color: #222222;
-}
-
->>>>>>> olivia
 .escapiumSubmitBtn {
   background-color: #222222;
   padding: 10px 30px;
@@ -2159,7 +2107,6 @@ input[type=checkbox] {
     grid-column: span 1;
   }
 }
-<<<<<<< HEAD
 @media (min-width: 768px) and (max-width: 1024px) {
   .singleBlog_figure-picture {
     height: 320px;
@@ -2167,8 +2114,6 @@ input[type=checkbox] {
     background-size: 109%;
   }
 }
-=======
->>>>>>> olivia
 @media (min-width: 1025px) {
   .singleBlog_figure-picture {
     height: 320px;
