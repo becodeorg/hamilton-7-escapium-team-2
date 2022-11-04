@@ -34,6 +34,8 @@
   }
 
   &__menu {
+    z-index: 10;
+
     font-weight: 200;
     align-items: center;
     position: fixed;
@@ -45,6 +47,7 @@
     background-color: $sidebarBackground;
 
     &.active {
+
       left: 0;
     }
   }
