@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="room">
+    <header class="room__header">
         <section class="navbar">
             <a class="navbar__logo" href="index.html"><img src="resources/images/logo/logo.png" alt="Escapium Logo"></a>
 
@@ -46,114 +46,329 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <!-- Booking and Login  -->
             </nav>
 
         </section>
-        <section class="room__hero">
+        <section class="room__header--hero">
             <h1>The Cure</h1>
         </section>
     </header>
-    <main>
-        <section class="room__intro">
-            <div class="room__container">
-                <div class="card__level hard">
-                    <i class="fa-solid fa-lock card__level--red"></i>
-                    <i class="fa-solid fa-lock card__level--red"></i>
-                    <i class="fa-solid fa-lock card__level--red"></i>
-                    <i class="fa-solid fa-lock card__level--red"></i>
-                    <i class="fa-solid fa-lock card__level--item"></i>
+    <main class="room__main">
+        <section class="room__details">
+            <section class="room__intro">
+                <div class="room__container">
+                    <div class="card__level hard">
+                        <i class="fa-solid fa-lock card__level--red"></i>
+                        <i class="fa-solid fa-lock card__level--red"></i>
+                        <i class="fa-solid fa-lock card__level--red"></i>
+                        <i class="fa-solid fa-lock card__level--red"></i>
+                        <i class="fa-solid fa-lock card__level--item"></i>
+                    </div>
+                    <p>DIFFICULTY</p>
                 </div>
-                <p>DIFFICULTY</p>
-            </div>
-            <div class="room__container">
-                <div class="card__info--item players">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>2-3</p>
+                <span class="lineBreak"></span>
+                <div class="room__container">
+                    <div class="card__info--item players">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>2-3</p>
+                    </div>
+                    <p>PLAYERS</p>
                 </div>
-                <p>PLAYERS</p>
-            </div>
-            <div class="room__container">
-                <div class="card__info--item minutes">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60</p>
+                <span class="lineBreak"></span>
+                <div class="room__container">
+                    <div class="card__info--item minutes">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>60</p>
+                    </div>
+                    <p>MINUTES</p>
                 </div>
-                <p>MINUTES</p>
-            </div>
+            </section>
+            <article class="room__description">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates neque fuga et suscipit aliquam!
+                    Omnis
+                    necessitatibus, illo nihil nulla architecto expedita facere. Ad culpa nobis, corporis asperiores
+                    illo
+                    assumenda quas.
+                    Corrupti, fuga. Sapiente eum hic veritatis saepe repellat nemo reprehenderit consequuntur facere
+                    labore
+                    quas
+                    voluptatum, fugit aspernatur adipisci veniam enim quia magnam provident deserunt debitis. Beatae
+                    mollitia
+                    dolore qui consectetur.
+                </p>
+                <p>
+                    Omnis nesciunt voluptas autem delectus! Neque maiores exercitationem facere quos! Cumque, placeat
+                    neque
+                    nisi
+                    beatae, at molestias rerum sunt debitis repudiandae soluta commodi tempora cupiditate obcaecati
+                    nulla
+                    vero
+                    delectus natus!
+
+
+                    Similique laboriosam non reiciendis natus hic sapiente. Ipsum, fugiat? Unde rem, pariatur, nulla
+                    omnis
+                    incidunt fugiat perspiciatis nisi corrupti velit, sequi porro iusto quo quisquam aliquam consectetur
+                    quae!
+                </p>
+
+                <p>
+                    Facilis, dolores!
+                    Optio fugiat, delectus placeat magni quos qui impedit quidem culpa, libero dolor facere ab eaque est
+                    dolore
+                    numquam odit corporis at harum totam. Nihil eum quaerat, aut dolor deleniti mollitia.
+                    Veniam cumque velit nam consequuntur tempore repellendus eum est nemo minima laborum modi
+                    dignissimos
+                    mollitia ea hic dolorem, cupiditate nesciunt libero magnam fuga beatae! Similique repudiandae facere
+                    ipsam
+                    quibusdam sit!
+                </p>
+            </article>
+            <section class="room__contact">
+                <div class="room__contact--item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+18009001248">+ 1 800 900 1248</a>
+                </div>
+                <div class="room__contact--item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="email:support@escapium.com">support@escapium.com</a>
+                </div>
+                <div class="room__contact--item">
+                    <i class="fa-brands fa-skype"></i>
+                    <a href="#">ESCAPIUM</a>
+                </div>
+                <div class="room__contact--item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="">LA 20198</a>
+                </div>
+                <a class="room__linkTransparent" href="contact.html">Booking Now!</a>
+            </section>
         </section>
-        <article class="room__description">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates neque fuga et suscipit aliquam!
-                Omnis
-                necessitatibus, illo nihil nulla architecto expedita facere. Ad culpa nobis, corporis asperiores illo
-                assumenda quas.
-                Corrupti, fuga. Sapiente eum hic veritatis saepe repellat nemo reprehenderit consequuntur facere labore
-                quas
-                voluptatum, fugit aspernatur adipisci veniam enim quia magnam provident deserunt debitis. Beatae
-                mollitia
-                dolore qui consectetur.
-                Omnis nesciunt voluptas autem delectus! Neque maiores exercitationem facere quos! Cumque, placeat neque
-                nisi
-                beatae, at molestias rerum sunt debitis repudiandae soluta commodi tempora cupiditate obcaecati nulla
-                vero
-                delectus natus!
-            </p>
-            <p>
-                Similique laboriosam non reiciendis natus hic sapiente. Ipsum, fugiat? Unde rem, pariatur, nulla omnis
-                incidunt fugiat perspiciatis nisi corrupti velit, sequi porro iusto quo quisquam aliquam consectetur
-                quae!
-                Facilis, dolores!
-                Optio fugiat, delectus placeat magni quos qui impedit quidem culpa, libero dolor facere ab eaque est
-                dolore
-                numquam odit corporis at harum totam. Nihil eum quaerat, aut dolor deleniti mollitia.
-                Veniam cumque velit nam consequuntur tempore repellendus eum est nemo minima laborum modi dignissimos
-                mollitia ea hic dolorem, cupiditate nesciunt libero magnam fuga beatae! Similique repudiandae facere
-                ipsam
-                quibusdam sit!
-            </p>
-            <p>
-                Sed molestias autem beatae vel iusto ducimus expedita facilis molestiae soluta commodi veniam,
-                blanditiis
-                asperiores sequi quaerat cum sint voluptate ratione temporibus minima doloremque accusantium unde rem?
-                Adipisci, aspernatur explicabo?
-                Natus reiciendis fuga sed incidunt ullam recusandae maiores facere sapiente laboriosam excepturi sunt
-                magnam
-                deleniti consequuntur vitae nobis neque quam, ratione quae ipsam sint culpa laudantium sit? Architecto,
-                dolorem nesciunt?
-            </p>
-        </article>
-        <section class="room__contact">
-            <div class="room__contact--item">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+18009001248">+ 1 800 900 1248</a>
-            </div>
-            <div class="room__contact--item">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="email:support@escapium.com">support@escapium.com</a>
-            </div>
-            <div class="room__contact--item">
-                <i class="fa-brands fa-skype"></i>
-                <a href="#">ESCAPIUM</a>
-            </div>
-            <div class="room__contact--item">
-                <i class="fa-solid fa-location-dot"></i>
-                <a href="">LA 20198</a>
-            </div>
-        </section>
-        <a class="linkTransparent" href="contact.html">Booking Now!</a>
         <section class="calendar">
+            <span class="separationBar"></span>
             <h3>Booking Form</h3>
             <div>
                 <!--Calendar for bookings here-->
             </div>
         </section>
-        <section class="room_rooms">
+        <section class="room__carousel">
             <h3>Other Rooms</h3>
-            <div class="card eight easy">
-                <a href="rooms.html">
-                    <div class="expand">
-                        <i class="fa-solid fa-expand"></i>
+            <!-- Control buttons -->
+            <div class="btn__container">
+                <a class="btn btn-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a class="btn btn-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <!--one-->
+            <div class="card one normal card-item-visible">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Magic Imporium</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
                     </div>
+                </a>
+            </div>
+            <!--two-->
+            <div class="card two hard">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Cure</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--three-->
+            <div class="card three easy">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Burlesque</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-5</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>BH 90210</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--four-->
+            <div class="card four very_hard">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                        </div>
+                        <h3>Prison Break</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--five-->
+            <div class="card five easy">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Hospital</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--six-->
+            <div class="card six normal">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Abandoned Factory</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>6-8</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>120</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>OKC 2179</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--seven-->
+            <div class="card seven hard">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Bunker 51</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--eight-->
+            <div class="card eight easy">
+                <a href="singleRoom.html" target="_blank">
                     <div class="card__content">
                         <div class="card__level">
                             <i class="fa-solid fa-lock card__level--red"></i>
@@ -180,10 +395,230 @@
                     </div>
                 </a>
             </div>
+            <!--nine-->
+            <div class="card nine normal">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Back To The Future</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-4</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--ten-->
+            <div class="card ten easy">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>The Cure</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2-3</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>LA 20198</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--eleven-->
+            <div class="card eleven very__hard">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                        </div>
+                        <h3>Burlesque</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>3-5</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>BH 90210</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--twelve-->
+            <div class="card twelve hard">
+                <a href="singleRoom.html" target="_blank">
+                    <div class="card__content">
+                        <div class="card__level">
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--red"></i>
+                            <i class="fa-solid fa-lock card__level--item"></i>
+                        </div>
+                        <h3>Prison Break</h3>
+                        <div class="card__info">
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>4-6</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>60</p>
+                            </div>
+                            <div class="card__info--item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>NY 3031</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
     <footer>
-        <!--Olivia -->
+        <div id="footerNumbersSections">
+            <div class="footerNumbers">
+                <p class="escapiumParagraph">01</p>
+                <div class="footerLines"></div>
+            </div>
+            <div class="sectionsfooter" id="ouraddress">
+                <h3>Our Address</h3>
+                <p class="escapiumParagraph">
+                    Escape Room Ltd.<br />
+                    2390 RoadHill St. Suite 100 <br />
+                    North Downtown, NY 82153
+                </p>
+                <p class="escapiumParagraph">
+                    Email: <span>info@escapium.com </span><br />
+                    Tel: +1800 900 1248
+                </p>
+            </div>
+        </div>
+        <div class="footerNumbersSections">
+            <div class="footerNumbers">
+                <p class="escapiumParagraph">02</p>
+                <div class="footerLines"></div>
+            </div>
+            <div class="sectionsfooter" id="usefullinks">
+                <h3>Useful Links</h3>
+                <a class="aUseful" href="about.html">ABOUT</a><a class="aUseful" href="blogs.html">GALLERY</a><a
+                    class="aUseful" href="singleRoom.html">PLAN AN EVENT</a><a class="aUseful"
+                    href="singleRoom.html">PRICING PACKAGES</a><a class="aUseful" href="about.html">FAQ</a><a
+                    id="lastAUseful" class="aUseful" href="contact.html">CONTACT</a>
+            </div>
+        </div>
+        <div class="footerNumbersSections">
+            <div class="footerNumbers">
+                <p class="escapiumParagraph">03</p>
+                <div class="footerLines"></div>
+            </div>
+            <div class="sectionsfooter" id="workinghours">
+                <h3>Working Hours</h3>
+                <table class="escapiumParagraph">
+                    <tr>
+                        <td>Monday:</td>
+                        <td class="hours">6pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday:</td>
+                        <td class="hours">5pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday:</td>
+                        <td class="hours">Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday:</td>
+                        <td class="hours">6pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday:</td>
+                        <td class="hours">2pm - 11pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday:</td>
+                        <td class="hours">11am - 11pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday:</td>
+                        <td class="hours">11am - 11pm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footerNumbersSections">
+            <div class="footerNumbers">
+                <p class="escapiumParagraph">04</p>
+                <div class="footerLines"></div>
+            </div>
+            <div class="sectionsfooter" id="sociallinks">
+                <h3>Social Links</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-yelp"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <img src="./resources/images/logo/footer-logo.png" alt="escapium" width="150px" />
+            <p class="escapiumParagraph">
+                Copyright © 2022 Escapium | All Rights Reserved
+            </p>
+        </div>
     </footer>
 
     <script src="resources/js/index.js"></script>

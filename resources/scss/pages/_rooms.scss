@@ -1,5 +1,6 @@
 @use "../util/utilities" as *;
 
+
 main {
     background-color: $darkBackground;
 }
@@ -28,7 +29,7 @@ main {
 }
 
 .two,
-.twelve {
+.ten {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6237088585434174) 75%, rgba(0, 0, 0, 0.4976584383753502) 100%),
         url(../images/gallery/room-2.jpg) no-repeat center 10%;
 }
@@ -84,6 +85,7 @@ main {
     margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-size: cover;
+    position: relative;
 
     .expand {
         visibility: hidden;
@@ -111,9 +113,9 @@ main {
 
     &__content {
         text-align: left;
-        position: relative;
+        position: absolute;
         left: 30px;
-        top: 300px;
+        bottom: 30px;
         width: max-content;
 
         h3 {
@@ -129,6 +131,7 @@ main {
         &--item {
             display: flex;
             align-items: center;
+            width: max-content;
 
             p {
                 padding: 0 15px;
@@ -138,6 +141,7 @@ main {
 
     &__level {
         font-size: 0.8rem;
+        width: max-content;
 
         &--item {
             color: $navFontcolor;
@@ -151,15 +155,7 @@ main {
 
 .pages {
     a {
-        border: 1px solid $navFontcolor;
-        padding: 5px 15px;
-        border-radius: 50%;
-        margin: 5px;
-
-        &:hover {
-            background-color: $escapiumRed;
-            border: none;
-        }
+        @include pageButton;
     }
 }
 
@@ -187,9 +183,6 @@ main {
 
         &__content {
             display: grid;
-            height: 200px;
-
-            top: 10px;
             width: 150px;
 
             h3 {
