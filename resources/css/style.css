@@ -101,6 +101,15 @@ li {
   display: none;
 }
 
+/* &__login {
+  &--link {
+    color: $whiteBackground;
+
+    &:hover {
+      color: $escapiumRed;
+    }
+  }
+} */
 .bar {
   display: block;
   width: 25px;
@@ -317,13 +326,15 @@ footer {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  z-index: 0;
 }
 
 footer::after {
   content: "";
   background: url("../images/gallery/room-7.jpg") no-repeat fixed;
+  background-size: cover;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.2;
   top: 0;
   left: 0;
   right: 0;
@@ -335,11 +346,8 @@ footer::after {
   width: 100%;
 }
 
-i {
-  color: white;
-}
-
 .footerNumbers {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -427,6 +435,9 @@ ul.social>li>a {
   color: #fff;
   margin: 0 3px 3px 0;
 }
+ul.social > li > a i {
+  color: white;
+}
 
 ul.social>li>a:hover {
   text-decoration: none;
@@ -487,6 +498,7 @@ ul.social>li>a:hover {
     width: 100vw;
   }
 }
+<<<<<<< HEAD
 
 #home header {
   background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgba(27, 27, 27, 0.4248293067) 100%), url(../images/gallery/slide-4.jpg) no-repeat center;
@@ -683,12 +695,21 @@ ul.social>li>a:hover {
 }
 
 header {
+=======
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#headerAbout {
+>>>>>>> olivia
   text-align: center;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../images/gallery/slide-1.jpg) no-repeat center 10%;
   height: 200px;
   background-size: cover;
 }
 
+<<<<<<< HEAD
 .herotitle {
   color: red;
   margin: 15px 0;
@@ -711,6 +732,8 @@ main {
   flex-direction: column;
 }
 
+=======
+>>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -723,8 +746,57 @@ h2 {
   text-align: center;
 }
 
+.pPlay {
+  margin-bottom: 40px;
+}
+
+#video {
+  width: 90%;
+}
+
+#certificates {
+  align-items: center;
+}
+
+.certificates {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.teamMembers {
+  margin-bottom: 20px;
+}
+
 #whatPeopleSay {
+  align-items: center;
   background-color: #1B1B1B;
+}
+
+.peopleSay {
+  margin-bottom: 20px;
+}
+.peopleSay a {
+  margin-bottom: 20px;
+  color: #F60B0E;
+  text-decoration: underline;
+}
+
+#commentAaron {
+  display: none;
+}
+
+.commentName {
+  font-size: smaller;
+  font-weight: 900;
+}
+
+.commentPhoto {
+  width: 25%;
+}
+
+#arrows {
+  display: none;
+  flex-direction: row;
 }
 
 #FAQ {
@@ -735,19 +807,199 @@ h2 {
 }
 
 #h3FAQ {
+  text-align: center;
   color: #222222;
 }
 
-#faqQuestions {
+#FAQheader p {
+  text-align: center;
+  color: #777;
+}
+
+.faqQuestions {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: #222222;
 }
-
-.fa-thin fa-plus {
+.faqQuestions i {
+  text-align: center;
+  margin-right: 30px;
+  color: #717171;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #f6f6f6;
+}
+.faqQuestions p {
   color: #222222;
+  font-weight: 800;
 }
 
+#EscapeRoomHidden {
+  display: none;
+}
+
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #video {
+    width: 80%;
+  }
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .certificates {
+    width: 40%;
+  }
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+  }
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .commentPhoto {
+    width: 25%;
+  }
+  #commentAaron {
+    display: block;
+  }
+  #commentTiffany {
+    display: block;
+  }
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #arrows a {
+    color: white;
+  }
+  #slash {
+    transform: scaleX(-1);
+  }
+  #faqquestions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #EscapeRoomHidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .aboutSectionDark {
+    background-color: #1B1B1B;
+  }
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .pPlay {
+    width: 50%;
+  }
+  #video {
+    width: 90%;
+  }
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .certificates {
+    width: 10%;
+  }
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #commentAaron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #commentTiffany {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .peopleSayComment {
+    width: 40%;
+  }
+  .commentPhoto {
+    width: 10%;
+  }
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #arrows li a {
+    color: white;
+  }
+  #slash {
+    transform: scaleX(-1);
+  }
+  #FAQheader {
+    margin-bottom: 20px;
+  }
+  .faqQuestions {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #faqquestions {
+    width: 40%;
+    margin: auto;
+  }
+  #EscapeRoomHidden {
+    display: flex;
+    margin: auto;
+  }
+  #EscapeRoomHidden #response {
+    display: flex;
+    text-align: justify;
+    color: #717171;
+    font-weight: 400;
+  }
+  #questionResponse {
+    display: flex;
+    flex-direction: column;
+  }
+  #EscapeRoomNotHidden {
+    display: none;
+  }
+}
 #blogs {
   background-color: #222222;
   font-family: "Hind";
@@ -1687,7 +1939,7 @@ main {
   }
 }
 
-header {
+#headerContacts {
   text-align: center;
   background: linear-gradient(90deg,
       rgb(0, 0, 0) 0%,
@@ -1715,6 +1967,7 @@ header {
   padding: 5px;
 }
 
+<<<<<<< HEAD
 #singleBlog {
   background-color: #222222;
   font-family: "Hind";
@@ -1868,3 +2121,100 @@ input[type=checkbox] {
     margin: 0 0 50px 0;
   }
 }
+=======
+#getInTouchHeader {
+  margin-bottom: 30px;
+}
+#getInTouchHeader h2 {
+  margin-bottom: 10px;
+}
+
+#escapiumInfos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#escapiumInfos i {
+  font-size: 30px;
+  color: white;
+  margin-right: 15px;
+}
+
+.escapiumInfos {
+  display: flex;
+  flex-direction: row;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactForm h2 {
+  margin-bottom: 20px;
+}
+
+#contactsFormDiv {
+  margin-bottom: 30px;
+}
+
+#contactsSendMessage {
+  width: 250px;
+  border: 1px solid #777;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 0;
+  color: #fefefe;
+  font-weight: 600;
+}
+#contactsSendMessage:hover {
+  background-color: #F60B0E;
+}
+
+#mapTest {
+  filter: grayscale(90%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 300px;
+}
+
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+  #getInTouch {
+    width: 30%;
+  }
+  #ContactsInfosForm {
+    display: flex;
+    flex-direction: row;
+  }
+}
+#contactForm {
+  width: 60%;
+}
+
+@media only screen and (min-width: 768px) {
+  #getInTouch {
+    width: 30%;
+  }
+  #ContactsInfosForm {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+#contactForm {
+  width: 60%;
+}
+
+#maps {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+#mapTest {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+>>>>>>> olivia

@@ -2,6 +2,14 @@
 @use "../util/reset" as *;
 @use "../util/utilities" as *;
 
+<<<<<<< HEAD
+=======
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+>>>>>>> olivia
 #headerAbout {
   text-align: center;
   background: linear-gradient(
@@ -15,6 +23,7 @@
   background-size: cover;
 }
 
+<<<<<<< HEAD
 .hero {
   //padding: 40px;
 
@@ -40,6 +49,8 @@ main {
   flex-direction: column;
 }
 
+=======
+>>>>>>> olivia
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -51,8 +62,52 @@ h2 {
   text-align: center;
 }
 
+.pPlay {
+  margin-bottom: 40px;
+}
+
+#video {
+  width: 90%;
+}
+
+#certificates {
+  align-items: center;
+}
+
+.certificates {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.teamMembers {
+  margin-bottom: 20px;
+}
+
 #whatPeopleSay {
+  align-items: center;
   background-color: $darkestBackground;
+}
+.peopleSay {
+  margin-bottom: 20px;
+  a {
+    margin-bottom: 20px;
+    color: $escapiumRed;
+    text-decoration: underline;
+  }
+}
+#commentAaron {
+  display: none;
+}
+.commentName {
+  font-size: smaller;
+  font-weight: 900;
+}
+.commentPhoto {
+  width: 25%;
+}
+#arrows {
+  display: none;
+  flex-direction: row;
 }
 
 #FAQ {
@@ -62,13 +117,219 @@ h2 {
   background-color: white;
 }
 #h3FAQ {
+  text-align: center;
   color: $darkBackground;
 }
-#faqQuestions {
+
+#FAQheader {
+  p {
+    text-align: center;
+    color: $navFontcolor;
+  }
+}
+.faqQuestions {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: $darkBackground;
+  i {
+    text-align: center;
+    margin-right: 30px;
+    color: $globalFontColor;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
+    background-color: #f6f6f6;
+  }
+
+  p {
+    color: $darkBackground;
+    font-weight: 800;
+  }
 }
-.fa-thin fa-plus {
-  color: $darkBackground;
+#EscapeRoomHidden {
+  display: none;
+}
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #video {
+    width: 80%;
+  }
+
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .certificates {
+    width: 40%;
+  }
+
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .commentPhoto {
+    width: 25%;
+  }
+  #commentAaron {
+    display: block;
+  }
+
+  #commentTiffany {
+    display: block;
+  }
+
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    a {
+      color: white;
+    }
+  }
+
+  #slash {
+    transform: scaleX(-1);
+  }
+
+  #faqquestions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #EscapeRoomHidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutSectionDark {
+    background-color: $darkestBackground;
+  }
+
+  #howToPlay {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .pPlay {
+    width: 50%;
+  }
+
+  #video {
+    width: 90%;
+  }
+
+  #certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .certificates {
+    width: 10%;
+  }
+
+  #ourTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #commentAaron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #commentTiffany {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .peopleSayComment {
+    width: 40%;
+  }
+  .commentPhoto {
+    width: 10%;
+  }
+  #arrows {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    li a {
+      color: white;
+    }
+  }
+
+  #slash {
+    transform: scaleX(-1);
+  }
+
+  #FAQheader {
+    margin-bottom: 20px;
+  }
+  .faqQuestions {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #faqquestions {
+    width: 40%;
+    margin: auto;
+  }
+  #EscapeRoomHidden {
+    display: flex;
+
+    margin: auto;
+
+    #response {
+      display: flex;
+      text-align: justify;
+      color: $globalFontColor;
+      font-weight: 400;
+    }
+  }
+  #questionResponse {
+    display: flex;
+    flex-direction: column;
+  }
+  #EscapeRoomNotHidden {
+    display: none;
+  }
 }
